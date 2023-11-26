@@ -1,0 +1,200 @@
+
+/* ---------- price start ---------- */
+
+.pricing-left {
+  width: 30%;
+  padding: 150px 40px;
+  position: fixed;
+  /* height: 100%; */
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(30, 30, 30);
+  /* box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; */
+  z-index: -2;
+}
+
+.pricing-l-heading {
+  text-align: center;
+}
+
+.pricing-l-heading-1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: cursive;
+}
+
+.pricing-l-heading-2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: red;
+  font-family: poppins;
+}
+
+.pricing-l-heading-3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 30px;
+}
+.pricing-l-text {
+  font-family: poppins;
+  padding: 20px;
+  text-align: justify;
+}
+.pricing-l-contact {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding-top: 80px;
+}
+
+.pricing-l-contact i {
+  color: red;
+  font-size: 1.8rem;
+  padding-bottom: 12px;
+  /* margin-bottom: 4px; */
+  /* font-weight: 800; */
+}
+
+.pricing-l-contact .fa-whatsapp {
+  font-size: 2rem;
+  font-weight: 800;
+  padding-bottom: 10px;
+  /* margin-bottom: 2px; */
+}
+
+.pricing-right {
+  margin-left: 32%;
+  font-family: poppins;
+  padding: 50px 0;
+}
+
+.pricing-r-heading-1 {
+  font-size: 2.5rem;
+  font-family: nunito;
+  font-weight: 800;
+  color: red;
+}
+
+.pricing-r-heading-2 {
+  font-size: xx-large;
+  font-weight: 600;
+}
+.pricing-r-heading-2 span {
+  color: red;
+}
+
+.pricing-r-text-1 {
+  color: rgb(163, 163, 163);
+  font-size: 1.2rem;
+}
+.pricing-r-text-2 {
+  color: rgb(166, 166, 166);
+  font-size: 1.3rem;
+}
+
+.pricing-r-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.pricing-r-l-list {
+  background-color: rgb(44, 44, 44);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.pricing-r-l-heading-1 {
+  color: red;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.pricing-r-l-heading-2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: nunito;
+}
+
+.pricing-r-l-points > div {
+  padding: 0 20px;
+  /* color: red; */
+}
+
+.pricing-r-l-points > div::before {
+  content: "\2611";
+  color: red;
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+
+.pricing-r-l-btn > button {
+  color: white;
+  background: red;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: nunito;
+  border-radius: 10px;
+  padding: 2px 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .pricing-left {
+    width: 100%;
+    position: relative;
+    /* height: auto; */
+    padding: 20px;
+  }
+
+  .pricing-l-heading-1 {
+    font-size: 2rem;
+  }
+  .pricing-l-heading-2 {
+    font-size: 1.6rem;
+  }
+  .pricing-l-contact {
+    padding-top: 20px;
+  }
+
+  .pricing-right {
+    padding: 20px;
+    margin-left: 0;
+  }
+
+  .pricing-r-heading-1 {
+    font-size: 2rem;
+  }
+  .pricing-r-heading-2 {
+    font-size: 1.5rem;
+  }
+  .pricing-r-text-1 {
+    font-size: 1rem;
+  }
+  .pricing-r-text-2 {
+    font-size: 1.1rem;
+  }
+
+  .pricing-r-l-heading-1 {
+    font-size: 1.5rem;
+  }
+  .pricing-r-l-heading-2 {
+    font-size: 1.8rem;
+  }
+  .pricing-r-l-points > div {
+    padding: 0 10px;
+    font-size: 0.8rem;
+  }
+
+  .pricing-r-l-btn > button {
+    font-size: 1.2rem;
+  }
+}
+
+/* ---------- price end ---------- */

@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import PriceComponent from '../components/PriceComponent'
 
 const PricePage = () => {
   return (
@@ -8,7 +9,7 @@ const PricePage = () => {
         
         <Navbar />
 
-pricePage
+<PriceComponent />
 
         <Footer />
     </div>

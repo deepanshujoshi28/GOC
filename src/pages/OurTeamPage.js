@@ -1,19 +1,21 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import BookingComponent from '../components/BookingComponent'
+import OurTeamComponent from '../components/OurTeamComponent'
 
-const BookingPage = () => {
+const OurTeamPage = () => {
   return (
     <div>
-        
+      
+      
         <Navbar />
 
-        <BookingComponent />
+<OurTeamComponent/>
 
         <Footer />
+      
     </div>
   )
 }
 
-export default BookingPage
+export default OurTeamPage

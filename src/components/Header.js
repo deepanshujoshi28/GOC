@@ -1,6 +1,11 @@
 import React from 'react'
 import { useCountUp } from 'react-countup';
 
+import img from '../images/bg.png'
+import img1 from '../images/rot-bg.png'
+import img2 from '../images/1-rot_img.png'
+import img3 from '../images/hed.gif'
+
 
 export const Header = () => {
   
@@ -43,7 +48,10 @@ export const Header = () => {
 
 
         <div className='header-col-2'>
-          {/* <img src={img1} /> */}
+          {/* <img className="head-img-1" src={img1} />
+          <img className="head-img-2 imgrot" src={img2} /> */}
+          <img className="head-img-3" src={img} />
+          {/* <img className="head-img-3" src={img3} /> */}
         </div>
 
 

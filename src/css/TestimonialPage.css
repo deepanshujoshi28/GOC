@@ -1,0 +1,140 @@
+
+/* ---------- testimonial start ---------- */
+
+.testimonial-main {
+    font-family: poppins;
+    text-align: center;
+  }
+  
+  .tes-main-heading-1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: red;
+  }
+  .tes-main-heading-2 {
+    font-size: 1.3rem;
+    color: rgb(145, 145, 145);
+  }
+  
+  .tes-main-heading-3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .tes-main-heading-3 span {
+    color: red;
+  }
+  
+  .testimonial-content {
+    margin: 30px 80px 70px;
+    /* background-color: rgb(44, 44, 44); */
+  }
+  .tes-s-video {
+    height: 450px;
+  }
+  
+  .tes-s-video iframe {
+    height: 100%;
+    width: 95%;
+  }
+  .testimonial-slide {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    padding: 0 70px;
+    align-items: center;
+    text-align: center;
+  }
+  .tes-s-content {
+    height: 100%;
+    font-family: poppins;
+    background-color: rgb(36, 36, 36);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid rgb(80, 80, 80);
+    border-radius: 10px;
+  }
+  .tes-s-icon {
+    font-family: nunito;
+    font-size: 4rem;
+    font-weight: 700;
+    /* line-height: ; */
+    color: red;
+    margin-bottom: -40px;
+    margin-top: -10px;
+  }
+  .tes-s-comment {
+    text-align: justify;
+    /* justify-content: center; */
+  }
+  .tes-s-stars {
+    color: red;
+    font-size: 1.5rem;
+  }
+  
+  .tes-s-tittle {
+    font-size: 1.5rem;
+  }
+  
+  .tes-s-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .tes-s-image img {
+    width: 50px;
+    /* margin: auto; */
+    border-radius: 50px;
+  }
+  
+  .tes-s-name {
+    font-size: 1.5rem;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .tes-main-heading-1 {
+      font-size: 1.3rem;
+    }
+    .tes-main-heading-2 {
+      font-size: 0.9rem;
+    }
+    .tes-main-heading-3 {
+      font-size: 1rem;
+    }
+    .testimonial-slide {
+      display: flex;
+      flex-direction: column;
+    }
+    .testimonial-slide {
+      padding: 10px;
+    }
+    .testimonial-content {
+      margin: 10px 30px 40px;
+    }
+    .tes-s-video {
+      display: none;
+    }
+    .testimonial-slide {
+      padding: 10px 5px;
+    }
+    .tes-s-tittle {
+      font-size: 1.2rem;
+    }
+    .tes-s-stars {
+      font-size: 1.2rem;
+    }
+    .tes-s-comment {
+      font-size: 0.8rem;
+    }
+    .tes-s-icon {
+      font-size: 3.5rem;
+    }
+    .tes-s-name {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* ---------- testimonial end ---------- */
+  

@@ -31,9 +31,9 @@ const Navbar = () => {
                             <div className='nav-drop-content'>
                                 <div className='nav-d-c-link'>
                                     <Link to='/about-us'>About Us</Link>
-                                    <Link href="/our-team">Our Team</Link>
-                                    <Link to='/testimonial'>Testimonial</Link>
-                                    <Link to='/blogs'>Blogs</Link>
+                                    <Link to="/our-team">Our Team</Link>
+                                    <Link to='/customer-reviews'>Testimonial</Link>
+                                    <Link to='/blog-and-articles'>Blogs</Link>
                                     {/* <Link>Join US</Link> */}
                                     {/* <Link>Career</Link> */}
                                 </div>

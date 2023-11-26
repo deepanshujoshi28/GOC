@@ -1,0 +1,392 @@
+
+/* ---------- ContactComponent start ---------- */
+
+
+
+/* ----------------- Contact ------------------ */
+
+.contact-main {
+    padding: 40px 100px;
+  }
+  .contact-top {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .c-t-col {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .c-t-icon {
+    color: red;
+    font-size: 2.5rem;
+  }
+  
+  .c-t-t-h {
+    font-weight: bold;
+    font-size: large;
+  }
+  .c-t-t-t {
+    font-size: 0.9rem;
+    color: rgb(185, 185, 185);
+  }
+  
+  /* ----------------- */
+  
+  .contact-content {
+    display: flex;
+    padding: 50px 0;
+    gap: 60px;
+    align-items: center;
+  }
+  
+  .c-c-map {
+    display: flex;
+    padding: 20px;
+    border-radius: 30px;
+    border: solid gray;
+    background: black;
+  }
+  
+  .c-c-map iframe {
+    border: rgb(128, 128, 128) solid;
+    border-radius: 15px;
+    height: 450px;
+    width: 600px;
+  }
+  
+  .c-c-f-head-1 {
+    color: red;
+    font-weight: bolder;
+    font-size: 1.8rem;
+  
+    max-width: 330px;
+    /* position: relative; */
+    font-family: "Nunito";
+  }
+  
+  .c-c-f-head-1::after {
+    font-family: "Nunito";
+    content: "";
+    display: block;
+    width: 140px;
+    height: 3px;
+    border-radius: 10px;
+    background: red;
+    right: 30px;
+    top: 45%;
+    /* position: absolute; */
+  }
+  
+  .c-c-f-head-2 {
+    font-weight: 800;
+    font-size: 2.2rem;
+    font-family: "Nunito";
+  }
+  
+  .c-c-f-head-2 span {
+    color: red;
+  }
+  
+  .c-c-f-head-3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(214, 214, 214);
+  }
+  .c-c-f-head-3 {
+    margin-top: 20px;
+    font-size: 1rem;
+    /* color: gray; */
+    color: rgb(175, 175, 175);
+    line-height: 22px;
+  }
+  
+  .c-c-f-form {
+    margin-top: 12px;
+    background: rgb(0, 0, 0);
+    /* color: green; */
+  }
+  
+  .c-c-f-form > form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  /* ---------------ab--------------- */
+  
+  .contact-mn {
+    padding: 80px;
+  }
+  
+  .contact-page {
+    padding: 0 20px ;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .cont-map {
+    border: gray solid;
+    display: flex;
+    padding: 20px;
+    height: 450px;
+    background-color: black;
+    border-radius: 30px;
+    width: 610px;
+  }
+  
+  .cont-map iframe {
+    border: rgb(137, 137, 137) 2px solid;
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .contact-col-2 {
+    text-align: start;
+  
+  }
+  .contact-col-2-h1 {
+    color: red;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    font-family: "Nunito";
+  }
+  
+  .contact-col-2-h2 {
+    font-weight: 800;
+    font-size: 2.2rem;
+    font-family: "Nunito";
+  }
+  
+  .contact-col-2-h2 span {
+    color: red;
+  }
+  
+  .contact-col-2-h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(214, 214, 214);
+  }
+  
+  .contact-col-2-h4 {
+    font-size: 1rem;
+    color: rgb(175, 175, 175);
+    line-height: 40px;
+    margin-top: 20px;
+  }
+  
+  .contact-frm {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .contact-frm > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .contact-frm input,
+  textarea {
+    padding: 10px;
+    border: none;
+    font-family: poppins;
+  }
+  .contact-frm > button {
+    font-family: poppins;
+    font-size: large;
+    font-weight: bold;
+    background: red;
+    color: white;
+    padding: 8px;
+    border: none;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .contact-main {
+      padding: 20px;
+    }
+  
+    .c-c-map iframe {
+      height: 225px;
+      width: 300px;
+    }
+  
+    /* ---------------ab--------------- */
+  
+    .contact-top {
+      padding: 40px 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px 0;
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+    }
+  
+    .c-t-col {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  
+    .c-t-icon {
+      color: red;
+      font-size: 1.4rem;
+    }
+  
+    .c-t-t-h {
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    .c-t-t-t {
+      font-size: 0.7rem;
+      color: rgb(185, 185, 185);
+    }
+  
+    /* --------------- */
+  
+    .contact-mn{
+      padding: 30px 10px;
+  
+    }
+    
+    .contact-col-2-h1 {
+      font-size: 1.29rem;
+    }
+  
+    .contact-col-2-h2 {
+      font-size: 1.2rem;
+    }
+  
+    .contact-col-2-h2 span {
+      color: red;
+    }
+  
+    .contact-col-2-h3 {
+      font-size: .9rem;
+    }
+  
+    .contact-col-2-h4 {
+      font-size: 0.9rem;
+      line-height: 30px;
+      margin-top: 15px;
+    }
+  
+    .contact-page{
+      display: grid;
+      justify-content: start;
+      padding: 0;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  
+    .contact-col-1{
+      width: 100%;
+      margin: auto;
+    }
+    .cont-map{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 0;
+      height: 220px;
+      border: none;
+      background-color: transparent ;
+      
+    }
+    .cont-map iframe{
+      padding: 10px;
+      width: 90%;
+  
+    }
+  
+    .contact-frm div{
+      grid-template-columns: 1fr;
+    }
+    
+    .contact-frm input,
+    textarea {
+      font-size: .9rem;
+      padding: 5px;
+    }
+  
+    
+    
+    
+  /* 
+    .contact-mn {
+      padding: 30px 10px;
+    }
+    .contact-page {
+      padding: 0px;
+      display: grid;
+      gap: 20px;
+      align-items: center;
+      margin: auto;
+    }
+  
+    .cont-map {
+      width: 90%;
+      margin: auto;
+      padding: 10px;
+      height: 200px;
+    }
+  
+    .contact-col-2-h1 {
+      font-size: larger;
+    }
+  
+    .contact-col-2-h2 {
+      font-size: 1.1rem;
+    }
+  
+    .contact-col-2-h2 span {
+      color: red;
+    }
+  
+    .contact-col-2-h3 {
+      font-size: .9rem;
+    }
+  
+    .contact-col-2-h4 {
+      font-size: 0.9rem;
+      line-height: 30px;
+      margin-top: 15px;
+    }
+  
+    .contact-frm{
+      width: 90%;
+      margin: auto;
+    }
+  
+    
+  .contact-frm > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  
+    .contact-frm input,
+    textarea {
+      padding: 5px;
+    } */
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  /* ---------- ContactComponent end ---------- */
+  

@@ -1,0 +1,358 @@
+
+/* ----------------- service ------------------ */
+
+
+.select-bike {
+    /* background-color: rgb(255, 255, 255);
+    color: black; */
+    padding: 100px 50px;
+  }
+  
+  .select-bike-content {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .select-bike-col-1 {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: auto;
+  }
+  
+  .sb-img2 {
+    width: 75%;
+    margin-top: 25%;
+  }
+  
+  .sb-img3 {
+    width: 75%;
+    margin-left: 25%;
+  }
+  
+  .select-bike-col-1 > div > img {
+    /* box-shadow: 
+      rgba(206, 206, 206, 0.65) 5px 5px 10px 2px,
+      rgba(255, 255, 255, 0.8) 10px 1px 0px inset; */
+    width: 100%;
+    /* border-radius: 15px; */
+  }
+  .img-styl {
+    width: 100% !important;
+  }
+  .img001 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /* margin: 19% 0 0 25%; */
+  }
+  
+  .select-bike-col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    /* align-items: center; */
+  }
+  
+  .sb-heading-1 {
+    color: red;
+    font-weight: bolder;
+    font-size: 1.8rem;
+  
+    max-width: 330px;
+    position: relative;
+    font-family: "Nunito";
+  }
+  
+  .sb-heading-1::after {
+    font-family: "Nunito";
+    content: "";
+    display: block;
+    width: 140px;
+    height: 5px;
+    border-radius: 10px;
+    background: red;
+    right: 0;
+    top: 45%;
+    position: absolute;
+  }
+  
+  .sb-heading-2 {
+    font-weight: 800;
+    font-size: 2.2rem;
+    font-family: "Nunito";
+  }
+  
+  .sb-heading-2 span {
+    color: red;
+  }
+  
+  .sb-heading-3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(214, 214, 214);
+  }
+  .sb-text {
+    margin-top: 20px;
+    font-size: 1rem;
+    /* color: gray; */
+    color: rgb(175, 175, 175);
+    line-height: 22px;
+  }
+  
+  .sb-col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sb-c2-col {
+    margin: 30px 0;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    border-left: red 4px solid;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  .sb-c2-text-1 > span {
+    font-size: xx-large;
+    font-weight: bold;
+    color: red;
+    line-height: 50px;
+  }
+  .sb-c2-text-1 > span > span {
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+  }
+  .sb-c2-1 {
+    /* color: rgba(255, 255, 255, 0.463); */
+    color: gray;
+  }
+  
+  .sb-col-3 {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .sb-c3-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .select-bike-inp {
+    padding: 10px;
+    font-size: medium;
+    /* color: rgb(91, 90, 90); */
+  }
+  
+  .select-bike-btn {
+    background: red;
+    color: white;
+    /* border: 3px solid rgb(54, 54, 54); */
+    border: none;
+    font-weight: bolder;
+    font-size: x-large;
+    padding: 10px;
+  }
+  
+  /* 
+  .select-bike-col-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+  }
+  
+  .sb-heading {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  .sb-text {
+    font-size: large;
+    color: #414141;
+    text-align: justify;
+  }
+  .select-bike-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 30px;
+  }
+  .select-bike-inp {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    border: solid 1px rgb(184, 184, 184);
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    border-radius: 3px;
+  }
+  .select-bike-btn {
+    width: 300px;
+    margin: auto;
+    background-color: #db2b39;
+    font-size: medium;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+  } */
+  /* increment */
+  
+  .sb-inc {
+    text-align: center;
+  }
+  
+  .sb-fs-sml {
+    color: rgb(53, 53, 53) !important;
+    font-size: medium !important;
+    font-weight: bold !important;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .select-bike {
+      padding: 30px 0;
+    }
+    .select-bike-content {
+      width: 100%;
+      margin: auto;
+      grid-template-columns: 1fr;
+    }
+  
+    .select-bike-col-1 {
+      margin: auto;
+      width: 100%;
+      gap: 10px;
+    }
+  .select-bike-col-1 > div > img {
+    /* width: 95%; */
+  }
+    .select-bike-content {
+      width: 85%;
+      margin: auto;
+      gap: 10px;
+    }
+  
+    .sb-heading-1 {
+      font-size: larger;
+      max-width: 225px;
+    }
+    .sb-heading-1::after {
+      width: 100px;
+      height: 2px;
+      top: 50%;
+    }
+    .sb-heading-2 {
+      font-size: 1.3rem;
+    }
+  
+    .sb-heading-3 {
+      font-size: .8rem;
+    }
+    .sb-text {
+      font-size: 0.8rem;
+    }
+    .sb-col-2 {
+      grid-template-columns: 100%;
+      gap: 20px;
+      margin: 15px 0;
+    }
+    .sb-c2-text-1 > span {
+      line-height: 30px;
+      font-size: 1.3rem;
+    }
+    .sb-c2-col {
+      margin: 0;
+      font-size: 0.7rem;
+    }
+  
+    .sb-col-3 {
+      margin: 20px 0;
+    }
+  
+    .select-bike-btn {
+      font-size: large;
+      /* margin-bottom: 150px; */
+    }
+  
+    
+  .sb-col-3 {
+    gap: 10px;
+  }
+  
+  .sb-c3-1 {
+    gap: 5px;
+  }
+  
+  .select-bike-inp {
+    padding: 7px;
+    font-size: .9rem;
+  }
+  
+  
+    /* .select-bike {
+      padding: 15px 0;
+    }
+    .select-bike-col-2 {
+      padding: 0;
+    }
+    .sb-heading {
+      font-size: x-large;
+      padding-top: 10px;
+    }
+    .sb-text {
+      font-size: medium;
+      width: 90%;
+      margin: auto;
+    } */
+  }
+  
+  @media only screen and (max-width: 375px) {
+  /* .select-bike-col-1 {
+    width: 90%;
+    margin: 0 1px;
+  } */
+  
+  .sb-heading-2 {
+    font-size: 1.1rem;
+  }
+  
+  }
+  
+  
+  
+  .zoomIn {
+    /* visibility: visible; */
+    /* ------------- Select Bike end ---------------- */
+    /* animation-delay: 0.1s; */
+    animation-duration: 2s;
+    animation-name: zoomIn;
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
+   
+  

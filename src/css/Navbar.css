@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+
+body {
+  background: #0e1012;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 3rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+.nav-logo {
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Poppins";
+}
+.nav-logo span {
+  color: red;
+}
+.nav-logo i {
+  font-size: 1.8rem;
+}
+.nav-end {
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.nav-btn {
+  display: none;
+}
+nav a,
+nav div {
+  font-size: 14px;
+  color: var(--textColor);
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+nav div span:hover {
+  color: red;
+  /* cursor: pointer; */
+  cursor: grab;
+}
+
+.nav-drop {
+  position: relative;
+}
+
+.nav-drop-content {
+  display: none;
+  position: absolute;
+  /* margin-top: 5px; */
+  padding: 10px;
+  background-color: #000001;
+  width: auto;
+  width: 6rem;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
+}
+
+.nav-drop:hover .nav-drop-content {
+  display: block;
+}
+
+.nav-d-c-link {
+  display: grid;
+  gap: 10px;
+}
+
+.nav-end-start {
+  padding-right: 30px;
+  line-height: 40px;
+  border-right: rgb(122, 122, 122) 2px solid;
+}
+.nav-end-start > .sd {
+  display: none;
+}
+
+.nav-end-end > .sd {
+  display: none;
+}
+
+.nav-end-end {
+  padding-left: 40px;
+}
+.nav-end-end i {
+  margin-right: 15px;
+  font-size: larger;
+}
+
+a:hover {
+  color: red;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+/* .nav-select {
+  background-color: rgb(33, 33, 33);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  width: auto;
+  text-align: center;
+  padding: 3px 8px;
+  font-size: larger;
+  font-weight: bold;
+} */
+
+.nav-inp {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .nav-logo {
+    font-size: 1.8rem;
+  }
+
+  .nav-end-start > .sd,
+  .nav-end-end > .sd {
+    display: block;
+    font-size: 1.7rem;
+  }
+
+  .nav-end-start > .ld,
+  .nav-end-end > .ld {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu-btn {
+    display: block;
+    margin-right: 10px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+  }
+
+  header {
+    padding: 20px;
+    height: auto;
+  }
+
+  header nav {
+    margin: -4px -20px;
+    padding: 0;
+    position: fixed;
+    bottom: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+  }
+
+  header .responsive_nav {
+    transform: translateY(100vh);
+    background-color: black;
+    z-index: 2;
+  }
+
+  .nav-drop-content {
+    width: 300px;
+    text-align: start;
+    padding: 20px;
+  }
+
+  .nav-btn {
+    order: -2;
+  }
+
+  .nav-end {
+    flex: 1;
+    text-align: right;
+  }
+
+  .nav-close-btn {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    padding: 0;
+    color: white;
+    background-color: transparent;
+    border: none;
+  }
+
+  nav a,
+  nav div {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+  .nav-logo,
+  .nav-logo i {
+    font-size: 1.4rem;
+  }
+
+  .menu-btn {
+    margin-right: 5px;
+    font-size: 1.2rem;
+  }
+
+  .nav-end-start > .sd,
+  .nav-end-end > .sd {
+    font-size: 1.1rem;
+  }
+
+  .nav-end-start {
+    padding-right: 15px;
+  }
+  .nav-end-end {
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header {
+    padding: 5px;
+  }
+
+  .nav-logo,
+  .nav-logo i {
+    font-size: 1.2rem;
+  }
+
+  .nav-end-start > .sd,
+  .nav-end-end > .sd {
+    font-size: 0.9rem;
+  }
+
+  .nav-end-start {
+    padding-right: 10px;
+  }
+  .nav-end-end {
+    padding-left: 10px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 4px) {
+  header {
+    height: auto;
+    padding: 10px 10px 20px;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .nav-btn {
+    order: -2;
+  }
+
+  .nav-end {
+    flex: 1;
+    text-align: right;
+  }
+
+  .nav-logo i {
+    font-size: 1.1rem;
+  }
+  .nav-logo {
+    font-size: 1.1rem;
+    text-align: start;
+  }
+
+  .nav-btn {
+    margin-right: 10px;
+  }
+
+  .nav-end-start {
+    padding-right: 10px;
+
+    line-height: 30px;
+  }
+
+  .nav-end-start > .sd {
+    display: block;
+  }
+
+  .nav-end-start > .ld {
+    display: none;
+  }
+
+  .nav-end-end {
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+  }
+  .nav-end-end > .ld {
+    display: none;
+  }
+
+  .nav-inp {
+    padding: 4px 8px;
+
+    font-size: 11px;
+    width: 70px;
+  }
+
+  nav a {
+    margin-right: -10px;
+  }
+
+  .nav-btn {
+    display: block;
+  }
+
+  header .nav-btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 6px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: -100vh;
+    left: -60px;
+    height: 100%;
+    width: 106%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+  }
+
+  header .responsive_nav {
+    transform: translateY(100vh);
+    background-color: black;
+    z-index: 1;
+  }
+
+  nav {
+    margin-top: -40px;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    font-size: x-large;
+  }
+
+  nav a,
+  nav div {
+    font-size: 1.5rem;
+  }
+
+  .nav-select {
+    width: auto;
+    text-align: center;
+    padding: 3px 8px;
+    font-size: small;
+  }
+  .nav-end-start i {
+    font-size: 0.9rem;
+  }
+  .nav-end-end i {
+    margin-right: 7px;
+    font-size: medium;
+  }
+}

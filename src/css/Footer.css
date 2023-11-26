@@ -1,0 +1,222 @@
+.footer-main {
+    padding-top: 30px;
+    background-color: black;
+    color: white;
+  }
+  
+  .footer-main a {
+    /* color: rgb(215, 215, 215); */
+    color: white;
+    color: rgb(175, 175, 175);
+    /* color: gray; */
+    text-decoration: none;
+  }
+  
+  /* head */
+  .footer-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    /* padding: 90px; */
+  }
+  
+  .fh-logo {
+    text-align: center;
+    border-right: solid 2px gray;
+    padding-right: 80px;
+  }
+  .fh-logo a {
+    color: white;
+  }
+  
+  .fh-l-logo {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "Poppins";
+    font-weight: 600;
+  }
+  .fh-l-logo span {
+    color: red;
+  }
+  .fh-l-logo span i {
+    font-size: 1.8rem;
+  }
+  
+  .fh-l-tagline {
+    font-size: large;
+    color: rgb(198, 198, 198);
+    letter-spacing: 4px;
+    word-spacing: 2px;
+    /* color: rgb(171, 41, 41); */
+  }
+  
+  .fh-address-h {
+    font-size: x-large;
+    font-weight: bolder;
+    color: red;
+    font-family: "Nunito";
+    font-weight: 800;
+  }
+  
+  .fh-address-p {
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+  
+  /* content */
+  .footer-content {
+    padding: 50px 100px;
+    /* margin: 130px 0px; */
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 1.4fr 1fr 1fr 1.4fr; */
+    display: flex;
+    /* gap: 60px; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-content a:hover {
+    color: red;
+  }
+  
+  .fc-c-c {
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* width: 100%; */
+    height: 150px;
+  }
+  
+  .fc-c-h {
+    color: red;
+    font-family: cursive;
+    font-weight: 1000;
+    font-size: 1.3rem;
+    /* position: relative; */
+  }
+  
+  /* .fc-c-h::after {
+      font-family: "Nunito";
+      content: "";
+      display: block;
+      width: 150px;
+      margin-top: 2px;
+      height: 3px;
+      background-color: red;
+    } */
+  
+  .fc-c-text {
+    line-height: 25px;
+  }
+  
+  .fc-c-form {
+    padding: 3px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .fc-c-form input {
+    border: none;
+    padding-left: 10px;
+  }
+  .fc-c-form button {
+    color: white;
+    border: none;
+    background: red;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .f-bfr > a::before {
+    content: "\276f \276f";
+    font-size: 0.7rem;
+    margin-right: 10px;
+    color: red;
+    text-decoration: none !important ;
+  }
+  
+  .f-bfr > div::before {
+    content: "\2714";
+    font-size: 0.7rem;
+    margin-right: 10px;
+    color: red;
+    text-decoration: none !important ;
+  }
+  
+  .f-bfr > div::before {
+    /* content: " "; */
+    margin-right: 13px;
+  }
+  
+  .footer-cc {
+    background-color: #0e1012;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  @media only screen and (max-width: 800px) {
+  }
+  @media only screen and (max-width: 450px) {
+    .footer-head {
+      flex-direction: column;
+      text-align: center;
+      padding: 0 50px;
+      gap: 15px;
+    }
+    .footer-content {
+      padding: 40px;
+  
+      gap: 10px;
+    }
+    .fh-logo {
+      padding: 0;
+      border-right: none;
+    }
+  
+    .fh-l-logo {
+      font-size: 1.5rem;
+    }
+  
+    .fh-l-logo span i {
+      font-size: 1.4rem;
+    }
+  
+    .fh-l-tagline {
+      font-size: 1rem;
+      color: rgb(198, 198, 198);
+      letter-spacing: 2px;
+      word-spacing: 1px;
+    }
+  
+    .fh-address {
+      padding-top: 20px;
+      border-top: solid 2px rgb(82, 82, 82);
+    }
+  
+    .fh-address-h {
+      font-size: large;
+    }
+  
+    .fh-address-p {
+      font-size: 0.9rem;
+      padding: 0 20px;
+    }
+
+    .fc-c-form input {
+      width: 60%;
+      border: none;
+      padding-left: 10px;
+    }
+    .footer-cc {
+      font-size: small;
+      letter-spacing: 0px;
+      word-spacing: 1px;
+    }
+  }
+  

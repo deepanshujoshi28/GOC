@@ -35,8 +35,6 @@ body {
   background-image: url(./images/head-bg.png);
   /* background-size: cover; */
   background-size: 100% 100%;
-
-
 }
 .header-col-2 {
   width: 90%;
@@ -56,7 +54,7 @@ body {
   width: 520px;
   height: 520px;
 }
-.head-img-4{
+.head-img-4 {
   border-radius: 50px 0 50px 50px;
   width: 105%;
 }
@@ -69,7 +67,6 @@ body {
   /* background-color: rgb(0, 0, 0);
   border-radius: 0 50px 50px;
   box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;  */
-
 }
 
 .header-c-heading-1 {
@@ -114,15 +111,57 @@ body {
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 500px) {
-  .header{
+  .header {
     grid-template-columns: 1fr;
     padding: 20px;
-  background-image: none;
-
+    background-image: none;
   }
-  .header-col-2{
+  .header-col-2 {
     display: none;
   }
+
+  .header-col-1{
+    padding: 0;
+  }
+  .header-c-heading-1 {
+    font-size: 1.5rem;
+  }
+  
+  .header-c-heading-2 {
+    font-size: 1rem;
+    padding-bottom: 20px;
+  }
+
+  
+.header-c-form > input {
+  font-size: .8rem;
+  padding: 8px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.header-c-form > button {
+  font-size: 1rem;
+  padding: 8px 40px;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  margin-bottom: 20px;
+}
+  
+
+
+.header-c-inc-col {
+  font-size: .8rem;
+}
+.header-c-inc-col span {
+  font-size: 1.5rem;
+}
+.header-c-inc {
+  gap: 30px;
+}
+
+  
 }
 /* ------------- header end ---------------- */
 
@@ -279,9 +318,10 @@ body {
     font-size: 1.5rem;
     margin-bottom: 0px;
   }
-  .our-s-c-points > div , .our-s-l-points > div {
+  .our-s-c-points > div,
+  .our-s-l-points > div {
     margin: 0px 10px !important;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .our-s-l-points > div::before,
   .our-s-c-points > div::before {
@@ -325,15 +365,14 @@ body {
 
 /* ------------- Offer start ---------------- */
 
-.offer-main{
+.offer-main {
   margin: 20px 0;
 }
-.offer-heading{
+.offer-heading {
   text-align: center;
   color: red;
   font-size: 2.5rem;
   font-weight: 700;
-
 }
 .offer-slider {
   margin: 20px 50px;
@@ -358,14 +397,13 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-  .offer-slider{
-    margin: 28px ;
+  .offer-slider {
+    margin: 28px;
   }
-  .offer-img{
+  .offer-img {
     padding: 5px;
   }
 }
-
 
 /* 
 .slick-dots li button:before {

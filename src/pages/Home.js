@@ -6,6 +6,7 @@ import OfferSlider from '../components/OfferSlider'
 import OurService from '../components/OurService'
 import Other from '../components/Other'
 import TestimonialComponent from '../components/TestimonialComponent'
+import BookingComponent from '../components/BookingComponent'
 
 const Home = () => {
   return (
@@ -13,9 +14,10 @@ const Home = () => {
 
       <Navbar />
 
-      {/* <Header /> */}
+      <Header />
 
       <OfferSlider/>
+      <BookingComponent />
 
       <OurService />
       <Other/>

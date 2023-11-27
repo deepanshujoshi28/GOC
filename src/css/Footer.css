@@ -160,9 +160,119 @@
     padding: 15px 0;
   }
   
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1000px) {
+
+    
+    .footer-content {
+      padding: 40px;
+      gap: 10px;
+    }
+    
+    .fh-l-logo{
+      font-size: 1.8rem;
+    }
+    
+    .fh-l-logo span i {
+      font-size: 1.7rem;
+    }
+  
+    .fh-l-tagline{
+      font-size: 1rem;
+    }
+    .footer-head {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    
+    .fh-logo {
+      padding-right: 10px;
+    }
+    
+    .fh-address-p {
+      font-size: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      font-weight: normal;
+      justify-content: center;
+    }
+    
+    .footer-cc {
+      font-size: .8rem;
+    }
+    
   }
-  @media only screen and (max-width: 450px) {
+
+  @media only screen and (max-width: 600px){
+    .footer-head{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .footer-head {
+      flex-direction: column;
+      text-align: center;
+      padding: 0 50px;
+      gap: 15px;
+    }
+    .footer-content {
+      padding: 40px;
+      gap: 10px;
+      flex-direction: column;
+    }
+    .fh-logo {
+      padding: 0;
+      border-right: none;
+    }
+    
+    .fh-l-logo {
+      font-size: 1.5rem;
+    }
+  
+    .fh-l-logo span i {
+      font-size: 1.4rem;
+    }
+  
+    .fh-l-tagline {
+      font-size: 1rem;
+      color: rgb(198, 198, 198);
+      letter-spacing: 2px;
+      word-spacing: 1px;
+    }
+  
+    .fh-address {
+      padding-top: 20px;
+      border-top: solid 2px rgb(82, 82, 82);
+    }
+  
+    .fh-address-h {
+      font-size: large;
+    }
+  
+    .fh-address-p {
+      font-size: 0.9rem;
+      padding: 0 20px;
+    }
+
+  
+    
+    .fh-address {
+      padding-top: 20px;
+      border-top: solid 2px rgb(82, 82, 82);
+    }
+  
+    
+    .footer-cc {
+      font-size: .7rem;
+      letter-spacing: 0px;
+      word-spacing: 1px;
+    }
+    
+    
+  } 
+
+  
+  @media only screen and (max-width: 4px) {
     .footer-head {
       flex-direction: column;
       text-align: center;

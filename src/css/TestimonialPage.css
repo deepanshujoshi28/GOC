@@ -84,7 +84,7 @@
   }
   
   .tes-s-image img {
-    width: 50px;
+    width: 40px;
     /* margin: auto; */
     border-radius: 50px;
   }
@@ -98,10 +98,10 @@
       font-size: 1.3rem;
     }
     .tes-main-heading-2 {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
     .tes-main-heading-3 {
-      font-size: 1rem;
+      font-size: .8rem;
     }
     .testimonial-slide {
       display: flex;
@@ -111,28 +111,44 @@
       padding: 10px;
     }
     .testimonial-content {
-      margin: 10px 30px 40px;
+      margin: 0px 30px 40px;
     }
     .tes-s-video {
-      display: none;
+      /* display: none; */
     }
+    /*  */
+  .tes-s-video {
+    margin: 20px 0;
+    height: 150px;
+    /* order: 2; */
+  }
+  
+  .tes-s-video iframe {
+    /* height: 100px; */
+    /* border: 20px; */
+    width: 95%;
+  }
+  /*  */
     .testimonial-slide {
-      padding: 10px 5px;
+      padding:  5px;
     }
     .tes-s-tittle {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     .tes-s-stars {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
     .tes-s-comment {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
     .tes-s-icon {
       font-size: 3.5rem;
     }
     .tes-s-name {
-      font-size: 1.1rem;
+      font-size: 1rem;
+    }
+    .tes-s-content{
+      padding: 20px 10px;
     }
   }
   

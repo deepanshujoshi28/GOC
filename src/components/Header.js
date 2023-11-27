@@ -50,8 +50,8 @@ export const Header = () => {
         <div className='header-col-2'>
           {/* <img className="head-img-1" src={img1} />
           <img className="head-img-2 imgrot" src={img2} /> */}
-          <img className="head-img-3" src={img} />
-          {/* <img className="head-img-3" src={img3} /> */}
+          {/* <img className="head-img-3" src={img} /> */}
+          {/* <img className="head-img-4" src={img3} /> */}
         </div>
 
 

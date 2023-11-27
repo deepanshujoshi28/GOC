@@ -35,7 +35,7 @@ const OfferSlider = () => {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -47,7 +47,7 @@ const OfferSlider = () => {
   return (
     <div className='offer-main'>
 
-<div className='offer-heading'>Top Offer</div>
+<div className='offer-heading'>Top Offers</div>
         <div className='offer-slider'>
 
         <Slider {...settings}>

@@ -8,6 +8,8 @@ import './css/BlogPage.css'
 import './css/AboutPage.css'
 import './css/TeamPage.css'
 import './css/TestimonialPage.css'
+import './css/Animation.css'
+import './css/Button.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import BookingPage from './pages/BookingPage';
@@ -17,6 +19,7 @@ import AboutPage from './pages/AboutPage';
 import BlogPage from './pages/BlogPage';
 import TestimonialPage from './pages/TestimonialPage';
 import OurTeamPage from './pages/OurTeamPage';
+import ButtonComponent from './components/ButtonComponent';
 
 
 function App() {
@@ -34,6 +37,7 @@ function App() {
           <Route path='/blog-and-articles' element={<BlogPage />}></Route>
 
         </Routes>
+      <ButtonComponent />
       </BrowserRouter>
 
     </div>

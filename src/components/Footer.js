@@ -33,10 +33,10 @@ const Footer = () => {
               <div className='fc-c-h'>Comapny</div>
               <div className='fc-c-c f-bfr'>
 
-                <Link>About Us</Link>
-                <Link>Contact Us</Link>
-                <Link>Privacy Policy</Link>
-                <Link>Term & Condition</Link>
+                <Link to="/about-us">About Us</Link>
+                <Link to="/contact-us">Contact Us</Link>
+                <Link to="">Privacy Policy</Link>
+                <Link to="">Term & Condition</Link>
                 {/* <Link>Booking</Link> */}
 
               </div>
@@ -61,10 +61,10 @@ const Footer = () => {
               <div className='fc-c-h'>Social Media</div>
               <div className='fc-c-c f-bfr'>
 
-                <Link><i class="fa-brands fa-facebook-f"></i> &ensp; FaceBook</Link>
-                <Link><i class="fa-brands fa-x-twitter"></i> &ensp; Twitter</Link>
-                <Link><i class="fa-brands fa-instagram"></i> &ensp; Instagram</Link>
-                <Link><i class="fa-brands fa-whatsapp"></i> &ensp; WhatsApp</Link>
+                <Link to="https://www.facebook.com/garageoncallofficial/" target='_blank'><i class="fa-brands fa-facebook-f"></i> &ensp; FaceBook</Link>
+                <Link to="https://twitter.com/i/flow/login?redirect_after_login=%2FGarageoncall" target='_blank'><i class="fa-brands fa-x-twitter"></i> &ensp; Twitter</Link>
+                <Link to="https://www.instagram.com/garageoncallofficial/" target='_blank'><i class="fa-brands fa-instagram"></i> &ensp; Instagram</Link>
+                <Link to="https://www.linkedin.com/company/garage-on-call/" target='_blank'><i class="fa-brands fa-linkedin-in"></i> &ensp; Linkedin</Link>
 
               </div>
             </div>

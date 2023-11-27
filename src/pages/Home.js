@@ -7,6 +7,7 @@ import OurService from '../components/OurService'
 import Other from '../components/Other'
 import TestimonialComponent from '../components/TestimonialComponent'
 import BookingComponent from '../components/BookingComponent'
+import ButtonComponent from '../components/ButtonComponent'
 
 const Home = () => {
   return (
@@ -25,6 +26,8 @@ const Home = () => {
       <TestimonialComponent />
 
       <Footer />
+
+      {/* <ButtonComponent /> */}
 
     </div>
   )

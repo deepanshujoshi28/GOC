@@ -30,7 +30,7 @@ const Other = () => {
             Choose a well qualified and experienced mechanic through our portal our mechanic reach at your doorstep to repair any kind of bike related problem or regular Bike servicing at home any where.
         </div>
         <div className='about-cu-txt-points'>
-            <div className=''>5+ years of experience</div>
+            <div className=''>8+ years of experience</div>
             <div className=''>Doorstep service No queue</div>
             <div className=''>Qualified and trusted Engineer</div>
             <div className=''>Timely service reminder</div>

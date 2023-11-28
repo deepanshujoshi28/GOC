@@ -164,7 +164,7 @@ nav {
     position: fixed;
     bottom: 100vh;
     height: 100%;
-    width: 100%;
+    width: 102%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,9 +220,13 @@ nav {
   .nav-logo,
   .nav-logo i {
     font-size: 1.4rem;
+    margin-left: 10px;
   }
 
   .menu-btn {
+
+    /* margin-right: 100px; */
+    /* padding: 0 20px 0 0; */
     margin-right: 5px;
     font-size: 1.2rem;
   }
@@ -245,9 +249,16 @@ nav {
     padding: 5px;
   }
 
+   header nav {
+    width: 104%;
+
+   }
+
   .nav-logo,
   .nav-logo i {
     font-size: 1.2rem;
+    /* margin-left: 7px; */
+
   }
 
   .nav-end-start > .sd,

@@ -19,8 +19,8 @@ const PriceComponent = () => {
     <div className='pricing-l-content'>
       <div className='pricing-l-text'>Choose plan that fit to your bike, feel free to contact us if you need more details.</div>
       <div className='pricing-l-contact'>
-        <div className='pricing-l-c '><span className=''><i class="fa-solid fa-phone-volume shakee"></i></span><br /> <div className='pop-outin'> 0120 4225828</div></div>
-        <div className='pricing-l-c '><i class="fa-brands fa-whatsapp"></i><br /> <div className='flipX'>+91 9658-124-124</div></div>
+        <div className='pricing-l-c '><span className=''><i class="fa-solid fa-phone-volume shake"></i></span><br /> <div className='flipX'> 0120 4225828</div></div>
+        <div className='pricing-l-c '><i class="fa-brands fa-whatsapp shake"></i><br /> <div className='flipX'>+91 9658-124-124</div></div>
       </div>
 
     </div>
@@ -35,7 +35,7 @@ const PriceComponent = () => {
     <div className='pricing-r-text-1'>Get 10 Days service warranty benefit.</div>
     <br />
     <div className='pricing-r-text-2'>Doorstep two wheeler repairing service and labour charges.</div>
-    <div className='pricing-r-text-2'>Parts and Oil Charges Extra</div>
+    <div className='pricing-r-text-2'>Parts and Oil Charges Extra.</div>
     <br />
 
     <div className='pricing-r-list'>

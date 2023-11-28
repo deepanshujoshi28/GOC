@@ -10,7 +10,7 @@ const ButtonComponent = () => {
     return (
         <div>
             <div>
-                <button onClick={() => setOpenModal(true)} className='offerButton pop-outin'><i class="fa-solid fa-gift "></i></button>
+                <button onClick={() => setOpenModal(true)} className='offerButton '><i class="fa-solid fa-gift pop-outin"></i></button>
                 <OfferPopup open={openModal} onClose={() => setOpenModal(false)} />
 
                 {/* <button className='button-call-btn'>

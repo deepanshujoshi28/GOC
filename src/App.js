@@ -20,6 +20,7 @@ import BlogPage from './pages/BlogPage';
 import TestimonialPage from './pages/TestimonialPage';
 import OurTeamPage from './pages/OurTeamPage';
 import ButtonComponent from './components/ButtonComponent';
+import OtherPage from './pages/OtherPage';
 
 
 function App() {
@@ -35,6 +36,8 @@ function App() {
           <Route path='/our-team' element={<OurTeamPage />}></Route>
           <Route path='/customer-reviews' element={<TestimonialPage />}></Route>
           <Route path='/blog-and-articles' element={<BlogPage />}></Route>
+
+          <Route path='/other' element={<OtherPage />}></Route>
 
         </Routes>
       <ButtonComponent />

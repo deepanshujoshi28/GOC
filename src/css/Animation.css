@@ -172,4 +172,13 @@
     }
   }
   
+
+
+  @keyframes fadeinout {
+    0%,100% { opacity: .3; }
+    50% { opacity: 1; }
+  }
+  
+  
+  
   /* ------------- Animations end ---------------- */

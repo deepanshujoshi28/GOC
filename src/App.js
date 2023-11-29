@@ -21,6 +21,7 @@ import TestimonialPage from './pages/TestimonialPage';
 import OurTeamPage from './pages/OurTeamPage';
 import ButtonComponent from './components/ButtonComponent';
 import OtherPage from './pages/OtherPage';
+import ScrollButton from './components/ScrollButton';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <Route path='/other' element={<OtherPage />}></Route>
 
         </Routes>
+        <ScrollButton />
       <ButtonComponent />
       </BrowserRouter>
 

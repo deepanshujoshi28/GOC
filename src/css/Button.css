@@ -52,6 +52,7 @@
 .side-fix-buttons{
     position: fixed;
     top: 40%;
+    animation: fadeinout 4s infinite linear forwards;
     /* left: 10%; */
 }
 .side-fix-heading {
@@ -61,12 +62,13 @@
     margin: 0 0 40px -40px;
     font-size: 1rem;
     letter-spacing: 3px;
-    color: rgb(167, 167, 167);
+    color: rgb(201, 201, 201);
 }
 
 .side-fix-b-icon a{
-    color: rgb(167, 167, 167);
+    /* color: rgb(167, 167, 167); */
     padding: 10px;
+    color: rgb(201, 201, 201);
     font-size: 1.2rem;
 }
 .side-fix-b-icon a i{
@@ -152,4 +154,44 @@
     height: 45px;
     width: 45px;
     }
+}
+
+
+.top-btn{
+    position: fixed;  
+    right: 20px; 
+    bottom: 40px; 
+}
+
+.top-btn button{
+    color: white;
+    /* padding: 10px; */
+    width: 60px;
+    height: 60px;
+    border: solid 2px;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    background-color: red;
+}
+
+@media only screen and (max-width: 500px) {
+
+    
+.top-btn{
+    position: fixed;  
+    right: 10px; 
+    bottom: 10px; 
+}
+
+.top-btn button{
+    color: white;
+    width: 40px;
+    height: 40px;
+    border: solid 2px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    background-color: red;
+}
+
+    
 }

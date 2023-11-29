@@ -129,7 +129,7 @@
   content: "\2705";
   font-weight: bolder;
   content: "\2714";
-  content: "\25c6";
+  /* content: "\25c6"; */
   /* content: "\2726"; */
   color: red;
   font-size: 1.3rem;
@@ -208,6 +208,10 @@
   .pricing-r-l-btn > button {
     font-size: 1.2rem;
   }
+  
+.pricing-r-l-points > div::before {
+  font-size: .8rem;
+}
 }
 
 /* ---------- price end ---------- */

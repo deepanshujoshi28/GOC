@@ -7,6 +7,7 @@ import OurService from '../components/OurService'
 import TestimonialComponent from '../components/TestimonialComponent'
 import BookingComponent from '../components/BookingComponent'
 import OurWork from '../components/OurWork'
+import ButtonComponent from '../components/ButtonComponent'
 
 const Home = () => {
   return (
@@ -25,6 +26,9 @@ const Home = () => {
       <TestimonialComponent />
 
       <Footer />
+
+      <ButtonComponent />
+
 
 
     </div>

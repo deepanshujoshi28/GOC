@@ -62,13 +62,13 @@
     margin: 0 0 40px -40px;
     font-size: 1rem;
     letter-spacing: 3px;
-    color: rgb(201, 201, 201);
+    color: rgb(255, 255, 255);
 }
 
 .side-fix-b-icon a{
     /* color: rgb(167, 167, 167); */
     padding: 10px;
-    color: rgb(201, 201, 201);
+    color: rgb(255, 255, 255);
     font-size: 1.2rem;
 }
 .side-fix-b-icon a i{

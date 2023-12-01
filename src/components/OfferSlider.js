@@ -1,6 +1,8 @@
 import React from 'react'
-import img1 from "../images/BIKE BANNER11-01.jpg"
-import img2 from "../images/BIKE BANNER22222-02.jpg"
+// import img1 from "../images/BIKE BANNER11-01.jpg"
+// import img2 from "../images/BIKE BANNER22222-02.jpg"
+import img1 from "../images/offer-1.jpg"
+import img2 from "../images/offer-2.jpg"
 
 import Slider from "react-slick";
 

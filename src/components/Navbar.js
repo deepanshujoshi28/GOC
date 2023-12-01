@@ -35,7 +35,7 @@ const Navbar = () => {
     // ------------------------- Option ------------------------------
     const a = currLocation.city;
 
-    const [loc, setLoc] = useState();
+    const [loc, setLoc] = useState("location..");
 
 
 
@@ -123,7 +123,11 @@ const Navbar = () => {
                         <div className='nav-end-end'>
 
                             {/* <Link to='#' className='ld'><i class="fa-solid fa-cart-shopping"></i></Link> */}
-                            <span  onClick={abab} className='nav-inp-spn'><input className='nav-inp'  value={loc} placeholder='Location..' /><i class="fa-solid fa-caret-down"></i></span>
+                            <span  onClick={abab} className='nav-inp-spn'>
+                                <div className='nav-inp'>{loc}<span><i class="fa-solid fa-caret-down"></i></span></div>
+                                {/* <input className='nav-inp'  value={loc} placeholder='Location..' /> */}
+                                {/* <i class="fa-solid fa-caret-down"></i> */}
+                                </span>
                             {/* <Link to='#' className='sd' ><i class="fa-solid fa-location-crosshairs"></i></Link> */}
                         </div>
 

@@ -1,14 +1,12 @@
 import React from 'react'
-import Other from '../components/Other'
-import LocationPopup from '../components/LocationPopup'
-import Navbar from '../components/Navbar'
+import AdminHome from './AdminHome'
+import AdminModelApi from './AdminModelApi'
 
 const OtherPage = () => {
   return (
     <div>
-      <Navbar />
-        {/* <Other /> */}
-        {/* <LocationPopup/> */}
+      {/* <AdminHome/> */}
+      <AdminModelApi/>
     </div>
   )
 }

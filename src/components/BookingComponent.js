@@ -66,7 +66,7 @@ const BookingComponent = () => {
 
 
     <div>
-      <div className='sb-col-3 select-bike-form'>
+      <form className='sb-col-3 select-bike-form'>
         <div className='sb-c3-1'>
 
           <select className="select-bike-inp ">
@@ -92,10 +92,12 @@ const BookingComponent = () => {
             <option>4 Bike Model</option>
           </select>
         </div>
+        {/* <form></form> */}
         {/* <textarea className="select-bike-inp" placeholder='Enter your address...'></textarea> */}
+        <input required className='select-bike-inp text-center' type='text' placeholder='Enter your phone number' />
         <input className='select-bike-inp text-center' type='text' placeholder='Enter your address' />
         <button className='select-bike-btn '>BOOK SERVICE </button>
-      </div>
+      </form>
       
     </div>
   </div>

@@ -122,9 +122,10 @@ nav {
   padding: 5px 10px;
   border: none;
   border-radius: 10px;
-  width: 100px;
+  width: 120px;
   font-size: 14px;
-  background-color: transparent;
+  background-color: white;
+  color: black;
 }
 .nav-inp-spn{
   background-color: rgb(255, 255, 255);
@@ -135,6 +136,7 @@ nav {
 .nav-inp-spn i{
   color: black;
   width: 0;
+  margin-left: 5px;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -236,10 +238,10 @@ nav {
 
   
   .nav-inp {
-    padding: 2px 8px;
+    padding: 4px 1px ;
 
     font-size: 11px;
-    width: 70px;
+    width: 85px;
   }
   .nav-inp-spn{
     background-color: rgb(255, 255, 255);
@@ -293,10 +295,10 @@ nav {
   }
   
   .nav-inp {
-    /* padding: 3px 5px; */
+    padding: 4px 1px;
     border-radius: 8px;
     font-size: .7rem;
-    width: 70px;
+    width: 85px;
   }
 
   .nav-end-start > .sd,

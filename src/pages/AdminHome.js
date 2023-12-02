@@ -8,8 +8,7 @@ const AdminHome = () => {
                 <div className='admin-page-content'>
                     <div className='admin-p-head'>
                         <div className='admin-p-heading-1'><span> <i class="fa-solid fa-screwdriver-wrench"></i> Garage </span> On Call</div>
-                        <div className='admin-p-heading-2'>Welcome Back</div>
-                        <div className='admin-p-heading-3'>Admin LogIn Only!</div>
+                        <div className='admin-p-heading-2'>Admin LogIn Only!</div>
 
 
                         {/* <div className='about-us-heading-2'>Welcome to <span> <i class="fa-solid fa-screwdriver-wrench"></i> </span> Garage On Call</div> */}

@@ -1,10 +1,7 @@
 .admin-page {
-  /* background-color: red; */
   width: 100%;
-  /* margin-bottom: 200px; */
   height: 100vh;
   display: flex;
-  /* align-items: center; */
 }
 
 .admin-page-main {
@@ -96,6 +93,107 @@
     border-right: solid 2px rgb(172, 172, 172);
     padding-right: 30px;
 }
+
+
+
+@media only screen and (max-width: 500px){
+
+  .admin-page-main{
+    margin: 25px;
+  box-shadow: rgba(181, 181, 197, 0.28) 0px 7px 29px 0px;
+  }
+
+  .admin-p-heading-1{
+    font-size: 1.9rem;
+    
+  }
+  .admin-p-heading-1 span i {
+    font-size: 1.8rem;
+  }
+  
+  .admin-p-heading-2{
+    font-size: 1.5rem;
+  }
+
+  
+  .admin-p-heading-3{
+    font-size: .9rem;
+  }
+  
+.admin-p-form form {
+  /* margin-top: 30px; */
+}
+
+.admin-p-form form input {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+
+
+.admin-p-foot{
+  margin-top: 90px;
+  gap: 20px;
+}
+
+.admin-p-foot a{
+  font-size: .9rem;
+}
+
+.admin-p-foot a:nth-child(1){
+  padding-right: 20px;
+}
+  
+  
+}
+
+@media only screen and (max-width: 350px){
+
+  
+  .admin-p-heading-1{
+    font-size: 1.6rem;
+    
+  }
+  .admin-p-heading-1 span i {
+    font-size: 1.4rem;
+  }
+  
+  .admin-p-heading-2{
+    font-size: 1.3rem;
+  }
+
+  
+  .admin-p-heading-3{
+    font-size: .8rem;
+  }
+  
+
+}
+
+
+.bike-m-ca-heading-1{
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.bike-m-ca-heading-1 span{
+  color: red;
+}
+
+
+.bike-m-ca-heading-2{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bike-m-ca-form form{
+  display: grid;
+
+}
+
+
+
+
+
 
 
 

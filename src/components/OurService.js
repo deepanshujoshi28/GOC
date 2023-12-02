@@ -1,5 +1,7 @@
 import React from 'react'
-import img0 from '../images/download.png'
+// import img0 from '../images/download.png'
+// import img0 from '../images/Untitled-4.png'
+import img0 from '../images/bike png.png'
 
 
 const OurService = () => {

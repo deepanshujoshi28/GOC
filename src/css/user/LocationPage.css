@@ -1,0 +1,160 @@
+.LocationPage {
+  padding: 40px 100px;
+}
+
+.LocationMain {
+  padding: 40px 60px;
+}
+
+.LocationPage-heading-1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: red;
+  font-family: nunito;
+}
+.LocationPage-heading-2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  /* color: red; */
+  /* font-family: nunito; */
+}
+.LocationPage-heading-2 span {
+  color: red;
+}
+
+.LocationPage-heading-3 {
+  font-size: 1.5rem;
+}
+
+.LocationPage-text {
+  color: rgb(202, 202, 202);
+  margin: 10px 0;
+}
+
+.LocationPage-points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.LocationPage-points > div{
+  padding: 20px;
+  background-color: black;
+  box-shadow: rgba(255, 255, 255, 0.2) 2px 4px 10px;
+  border-radius: 20px;
+
+}
+
+.LP-p-h {
+    font-size: 1.5rem;
+    color: red;
+    font-weight: 600;
+    /* font-family: nunito; */
+}
+.LP-p-h img{
+    display: none;
+}
+
+.LP-p-c {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.LP-p-c img {
+  border-radius: 50%;
+  width: 15%;
+}
+
+@media only screen and (max-width: 600px) {
+  .LocationPage {
+    padding: 20px;
+  }
+
+  .LocationMain {
+    padding: 0px;
+  }
+
+
+
+
+  
+.LocationPage-heading-1 {
+    font-size: 1.8rem;
+  }
+
+  .LocationPage-heading-2 {
+    font-size: 1.3rem;
+  }
+
+  .LocationPage-heading-3 {
+    font-size: 1rem;
+  }
+  
+  .LocationPage-text {
+    color: rgb(202, 202, 202);
+    margin: 5px 0 20px 10px ;
+    font-size: .9rem;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+
+  .LocationPage-points {
+    padding-bottom: 40px;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: justify;
+  }
+
+  
+  .LocationPage-points > div{
+    padding: 15px 20px;
+    box-shadow: rgba(255, 255, 255, 0.2) 2px 4px 10px;
+    /* border-radius: 20px; */
+
+  }
+  
+  
+
+  .LP-p-h {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: red;
+    font-weight: 600;
+  }
+
+  
+.LP-p-h img{
+    display: block;
+    border-radius: 50%;
+    width: 16%;
+}
+  
+  
+
+  .LP-p-c {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+.LP-p-c img {
+    display: none;
+  }
+  
+  .LP-p-p{
+    /* padding: 5px 0 0 20px; */
+    font-size: .8rem;
+  }
+
+
+  
+}

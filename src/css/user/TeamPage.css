@@ -1,0 +1,137 @@
+
+.team-head {
+    font-family: poppins;
+  }
+  .team-h-heading-1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: red;
+  }
+  
+  .team-h-heading-2 {
+    font-family: nunito;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .team-h-heading-2 span {
+    color: red;
+  }
+  .team-h-heading-3 {
+    font-size: 2.8rem;
+    margin-left: 200px;
+    font-weight: 600;
+  }
+  .team-h-heading-3 span {
+    color: red;
+  }
+  
+.team-content {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    /* margin-top: 20px; */
+  
+    /* height: 26x; */
+  }
+  
+  .team-c-col {
+    background-color: #262626;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  .team-c-c-img img {
+    /* width: 200px; */
+    height: 250px;
+    border-radius: 20px;
+  }
+  .team-c-c-content {
+    font-family: poppins;
+    color: rgb(160, 160, 160);
+    font-size: 0.8rem;
+  }
+  .team-c-c-c-text {
+    padding: 30px;
+    background-color: #0e1012;
+    border-radius: 20px;
+  }
+  .team-c-c-c-text-1 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  .team-c-c-c-text-2 {
+    font-size: 1rem;
+  }
+  .team-c-c-c-text-3 {
+    margin-top: 30px;
+  }
+  
+  .team-c-c-c-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    align-items: center;
+  }
+  
+  .team-c-c-c-l-1 {
+    background-color: #0e1012;
+    padding: 10px 20px;
+    border-radius: 12px;
+  }
+  .team-c-c-c-l-2 i {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #0e1012;
+    font-size: 1.3rem;
+  }
+  .team-c-c-c-l-2 .fa-linkedin-in {
+    padding: 8px 11px;
+  }
+
+  .team-head-c{
+    padding: 40px 80px 0;
+  }
+
+  .team-content-text{
+    padding: 10px 40px;
+  }
+  
+
+.team-content-heading-1{
+  font-size: 1.8rem;
+  font-weight: 600;
+}  
+.team-content-heading-1 span{
+  color: red;
+}
+
+
+  
+  
+  
+  
+  @media only screen and (max-width: 500px) {
+    .team-main {
+      padding: 20px;
+    }
+    .team-h-heading-3 {
+      font-size: 1.5rem;
+      margin-left: 0;
+    }
+  
+    .team-c-col {
+      flex-direction: column;
+    }
+  }
+  
+  /* ---------- our-team end ---------- */
+  

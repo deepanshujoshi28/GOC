@@ -1,0 +1,235 @@
+.admin-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.admin-page-main {
+  margin: 60px 200px;
+  width: 100%;
+  /* background-color: teal; */
+  box-shadow: rgba(181, 181, 197, 0.607) 0px 7px 29px 0px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-page-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-p-head {
+  text-align: center;
+}
+.admin-p-heading-1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.admin-p-heading-1 span {
+  color: red;
+}
+.admin-p-heading-1 span i {
+  font-size: 2.2rem;
+}
+.admin-p-heading-2 {
+  margin-top: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: nunito;
+}
+
+.admin-p-form form {
+  margin-top: 50px;
+  display: grid;
+}
+
+.admin-p-form form label {
+}
+.admin-p-form form input {
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1px rgb(169, 169, 169);
+  margin-bottom: 30px;
+  padding: 8px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.admin-p-form form button {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: poppins;
+  cursor: pointer;
+}
+
+.admin-p-form a i {
+  padding-bottom: 2px;
+}
+
+.admin-page a {
+  color: white;
+  text-decoration: none;
+}
+.admin-page a:hover {
+  color: red;
+}
+
+.admin-p-foot {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 70px;
+}
+.admin-p-foot a:nth-child(1) {
+  border-right: solid 2px rgb(172, 172, 172);
+  padding-right: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  .admin-page-main {
+    margin: 25px;
+    box-shadow: rgba(181, 181, 197, 0.28) 0px 7px 29px 0px;
+  }
+
+  .admin-p-heading-1 {
+    font-size: 1.9rem;
+  }
+  .admin-p-heading-1 span i {
+    font-size: 1.8rem;
+  }
+
+  .admin-p-heading-2 {
+    font-size: 1.5rem;
+  }
+
+  .admin-p-heading-3 {
+    font-size: 0.9rem;
+  }
+
+  .admin-p-form form {
+    /* margin-top: 30px; */
+  }
+
+  .admin-p-form form input {
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  .admin-p-foot {
+    margin-top: 90px;
+    gap: 20px;
+  }
+
+  .admin-p-foot a {
+    font-size: 0.9rem;
+  }
+
+  .admin-p-foot a:nth-child(1) {
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .admin-p-heading-1 {
+    font-size: 1.6rem;
+  }
+  .admin-p-heading-1 span i {
+    font-size: 1.4rem;
+  }
+
+  .admin-p-heading-2 {
+    font-size: 1.3rem;
+  }
+
+  .admin-p-heading-3 {
+    font-size: 0.8rem;
+  }
+}
+
+/* ---------------------- bike api start -------------------- */
+
+.bike-m-ca-heading-1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.bike-m-ca-heading-1 span {
+  color: red;
+}
+
+.bike-m-ca-heading-2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bike-m-ca-form form {
+  display: grid;
+  width: 60%;
+  margin: auto;
+}
+.bike-m-ca-form form input,
+.bike-m-ca-form form textarea{
+  font-size: 1rem;
+  padding: 10px;
+}
+.bike-m-ca-form form button{
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.bike-update-api-list{
+  margin-top: 30px;
+  display: grid;
+  gap: 30px;
+}
+
+.bike-u-api-list-1{
+  display: flex;
+  align-items: start;
+  gap: 40px;
+  /* border: solid; */
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  padding: 10px;
+  background: black;
+}
+.bike-u-api-list-1 div a{
+  text-decoration: none;
+  color: red;
+}
+
+.bike-u-a-brand{
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* border-right: solid gray; */
+}
+
+.bike-u-a-model{
+  flex: 1;
+  border-left: 3px solid gray;
+  padding-left: 60px;
+}
+
+.bike-u-a-model ul{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.bike-u-a-model ul{
+  list-style-type: number;
+
+}
+
+

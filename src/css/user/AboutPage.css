@@ -88,6 +88,7 @@
     display: grid;
     gap: 20px;
     width: 95%;
+    padding-bottom: 40px;
   }
 
   .about-m-v {
@@ -421,6 +422,7 @@
 
   .about-how-work,
   .about-choose-us {
+    display: none;
     width: 100%;
     /* margin: 10px; */
     grid-template-columns: 1fr;

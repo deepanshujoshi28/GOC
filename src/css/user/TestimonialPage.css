@@ -119,7 +119,8 @@
     /*  */
   .tes-s-video {
     margin: 20px 0;
-    height: 150px;
+    height: 180px;
+    width: 100%;
     /* order: 2; */
   }
   

@@ -76,28 +76,7 @@ const OfferSlider = () => {
                     <div className='offer-img'>
                        <img src={img4} alt='offer_image'/>
                     </div>
-                {/* ---slide---- */}
-               
-                <div className='offer-img'>
-                       <img src={img1} alt='offer_image'/>
-                    </div>
-                
-                {/* ---slide---- */}
-               
-                    <div className='offer-img'>
-                       <img src={img2} alt='offer_image'/>
-                    </div>
-                {/* ---slide---- */}
-               
-                    <div className='offer-img'>
-                       <img src={img3} alt='offer_image'/>
-                    </div>
-                {/* ---slide---- */}
-               
-                    <div className='offer-img'>
-                       <img src={img4} alt='offer_image'/>
-                    </div>
-                
+              
 
 
 

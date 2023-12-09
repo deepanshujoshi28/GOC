@@ -2,15 +2,16 @@
 .offerButton {
   background-color: red;
   color: white;
-  padding: 22px;
+  padding: 18px;
   border: 2px solid white;
   font-size: large;
   font-weight: bolder;
   border-radius: 50%;
-  position: fixed;
+  margin-top: 20px;
+  /* position: fixed;
   bottom: 20px;
   left: 20px;
-  z-index: 1;
+  z-index: 1; */
   /* animation: zoomIn 1s infinite; */
 }
 
@@ -18,16 +19,16 @@
   font-size: xx-large;
 }
 @media only screen and (max-width: 500px) {
-.offerButton {
-    padding: 11px;
+  .offerButton {
+    padding: 9px;
+    /* margin: 15px 10px 0 0; */
     /* font-size: large; */
-  bottom: 30px;
-  left: 12px;
-}
-.offerButton i {
+    /* bottom: 30px; */
+    /* right: 12px; */
+  }
+  .offerButton i {
     font-size: 1.4rem;
   }
-
 }
 
 /* ----------------- call button ------------------- */
@@ -49,141 +50,133 @@
 
 /* ------------ side ------------- */
 
-.side-fix-buttons{
-    position: fixed;
-    top: 40%;
-    animation: fadeinout 4s infinite linear forwards;
-    /* left: 10%; */
+.side-fix-buttons {
+  position: fixed;
+  top: 40%;
+  animation: fadeinout 4s infinite linear forwards;
+  /* left: 10%; */
 }
 .side-fix-heading {
-    background: none;
-    transform: rotate(270deg);
-    /* margin: -30px ; */
-    margin: 0 0 40px -40px;
-    font-size: 1rem;
-    letter-spacing: 3px;
-    color: rgb(255, 255, 255);
+  background: none;
+  transform: rotate(270deg);
+  /* margin: -30px ; */
+  margin: 0 0 40px -40px;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  color: rgb(255, 255, 255);
 }
 
-.side-fix-b-icon a{
-    /* color: rgb(167, 167, 167); */
-    padding: 10px;
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
+.side-fix-b-icon a {
+  /* color: rgb(167, 167, 167); */
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
 }
-.side-fix-b-icon a i{
-    margin-top: 10px;
+.side-fix-b-icon a i {
+  margin-top: 10px;
 }
-
 
 @media only screen and (max-width: 500px) {
-    
-.side-fix-buttons{
+  .side-fix-buttons {
     top: 45%;
-}
-    
-.side-fix-heading {
-    font-size: .7rem;
+  }
+
+  .side-fix-heading {
+    font-size: 0.7rem;
     letter-spacing: 3px;
     margin: 0 0 20px -30px;
-}
+  }
 
-
-.side-fix-b-icon a{
+  .side-fix-b-icon a {
     padding: 5px;
     font-size: 1rem;
-}
-.side-fix-b-icon a i{
+  }
+  .side-fix-b-icon a i {
     margin-top: 10px;
+  }
 }
-
-
-}
-
-
 
 /* --------call---------- */
 
-.contact-fix-btn{
-    position: fixed;
-    top: 50%;
-    right: 10px;
+.contact-fix-btn {
+  position: fixed;
+  top: 45%;
+  right: 10px;
 }
 
-
-.call-fix-buttons, .whatsapp-fix-buttons {
-    background-color: red;
-    border: white;
-    display: inline-block;
-    border: solid 2px;
-    border-radius: 50%;
-    height: 70px;
-    width: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.call-fix-buttons,
+.whatsapp-fix-buttons {
+  background-color: red;
+  border: white;
+  display: inline-block;
+  border: solid 2px;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.call-fix-buttons a, .whatsapp-fix-buttons a{
-    background-color: transparent;
-    border: none;
-    /* padding: 10px; */
-    font-size: xx-large;
-    font-size: 2.2rem;
-    font-weight: bolder;
-    color: white;
+.call-fix-buttons a,
+.whatsapp-fix-buttons a {
+  background-color: transparent;
+  border: none;
+  /* padding: 10px; */
+  font-size: xx-large;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  color: white;
 }
 
-.call-fix-buttons{
-    animation: shake 1.3s ease .6s infinite;
-    
+.call-fix-buttons {
+  animation: shake 1.3s ease 0.6s infinite;
 }
 .whatsapp-fix-buttons {
-    margin-top: 15px;
-    background-color: green;
-    animation: shake 1.3s ease infinite 1s;
+  margin-top: 15px;
+  background-color: green;
+  animation: shake 1.3s ease infinite 1s;
 }
 
 @media only screen and (max-width: 500px) {
-    .whatsapp-fix-buttons {
-        margin-top: 15px;
-    }
-    .call-fix-buttons a, .whatsapp-fix-buttons a{
-        font-size: 1.3rem;
-    }
-    .call-fix-buttons, .whatsapp-fix-buttons {
+  .whatsapp-fix-buttons {
+    margin-top: 15px;
+  }
+  .call-fix-buttons a,
+  .whatsapp-fix-buttons a {
+    font-size: 1.3rem;
+  }
+  .call-fix-buttons,
+  .whatsapp-fix-buttons {
     height: 45px;
     width: 45px;
-    }
+  }
 }
 
-
-.top-btn{
-    position: fixed;  
-    right: 20px; 
-    bottom: 40px; 
+.top-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
 }
 
-.top-btn button{
-    color: white;
-    /* padding: 10px; */
-    width: 60px;
-    height: 60px;
-    border: solid 2px;
-    font-size: 1.8rem;
-    border-radius: 50%;
-    background-color: red;
+.top-btn button {
+  color: white;
+  /* padding: 10px; */
+  width: 60px;
+  height: 60px;
+  border: solid 2px;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  background-color: red;
 }
 
 @media only screen and (max-width: 500px) {
+  .top-btn {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+  }
 
-    
-.top-btn{
-    position: fixed;  
-    right: 10px; 
-    bottom: 10px; 
-}
-
-.top-btn button{
+  .top-btn button {
     color: white;
     width: 40px;
     height: 40px;
@@ -191,7 +184,103 @@
     font-size: 1.2rem;
     border-radius: 50%;
     background-color: red;
+  }
 }
 
-    
+.help-fix-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+.help-fix-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+.help-fix-btn span {
+  padding: 5px 10px;
+  background-color: rgb(73, 73, 73);
+}
+
+.help-fix-btn i {
+  border: solid 2px white;
+  color: red;
+  border-radius: 50%;
+  font-size: 3rem;
+  background-color: white;
+}
+
+.help-fix-form {
+  display: grid;
+  background-color: black;
+  gap: 15px;
+  box-shadow: rgba(255, 255, 255, 0.2) 2px 4px 10px;
+  padding: 20px;
+}
+.help-fix-form input,
+.help-fix-form textarea {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.help-fix-form-btn {
+  color: white;
+  background: red;
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* font-size: 1rem; */
+  border: rgb(226, 154, 154) 2px solid;
+  padding: 5px;
+}
+
+.help-fix-close-btn {
+  /* border-radius: 50%; */
+  color: red;
+  color: white;
+  background-color: transparent;
+  font-size: 3.4rem;
+  border: none;
+  
+}
+
+.help-fix-frm {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .help-fix-btn {
+    font-size: .8rem;
+  }
+  
+.help-fix-btn span {
+  padding: 5px 8px;
+}
+
+.help-fix-btn i {
+  font-size: 2.4rem;
+}
+
+.help-fix-close-btn{
+  font-size: 2.5rem;
+}
+
+.help-fix-form input,
+.help-fix-form textarea {
+  padding: 4px;
+  font-size: .8rem;
+}
+
+.help-fix-form-btn {
+  font-size: 1rem;
+}
+
+
+  
 }

@@ -73,7 +73,7 @@ const TermConditionPage = () => {
 
 
                 <div className='TC-heading-2'>Contact Us:</div>
-                <div className='TC-text'>If you have any questions or concerns about these Terms & Conditions, please contact us at [Your Contact Information].</div>
+                <div className='TC-text'>If you have any questions or concerns about these Terms & Conditions, please contact us at support@garageoncall.com .</div>
 
 
 

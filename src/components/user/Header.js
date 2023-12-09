@@ -16,11 +16,11 @@ export const Header = () => {
           <div className='header-c-heading-1'>Service Your Motorbike <br />at Doorstep</div>
           <div className='header-c-heading-2'>Book Expert Mechanic to Fix your <br />Bike at Your Home</div>
 
-          <div className='header-c-form'>
+          <form className='header-c-form'>
             <input type='number' placeholder='Enter your number' />
             <br />
             <button>BOOK NOW</button>
-          </div>
+          </form>
 
           <div className='header-c-inc'>
             <div className='header-c-inc-col'>

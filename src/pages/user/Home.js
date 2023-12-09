@@ -19,8 +19,10 @@ const Home = () => {
 
       <OfferSlider/>
       <BookingComponent />
-
+<div className='home-pg-padding'>
       <OurService />
+
+</div>
       <OurWork />
 
       <TestimonialComponent />

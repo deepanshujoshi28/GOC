@@ -115,12 +115,12 @@ const Navbar = () => {
                     <div className='nav-end'>
 
                         <div></div>
-                        <div className='nav-end-start'>
+                        {/* <div className='nav-end-start'>
 
                             <Link to='#' className='ld' >Login / Register</Link>
                             <Link to='#' className='sd' ><i class="fa-solid fa-user"></i></Link>
 
-                        </div>
+                        </div> */}
                         <></>
                         <div className='nav-end-end'>
 

@@ -1,79 +1,91 @@
-import axios from "axios";
-import {useEffect, useState} from 'react';
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
 
 const Other = () => {
-  // ------------------------- location ---------------
-  const [currLocation, setCurrLocation] = useState({});
-  // const [currLocationJs, setCurrLocationJs] = useState({});
+
+
+  const [countries, setCountries] = useState([])
+
+  const fetchBike = async () => {
+    const res = await axios.get("http://localhost:2000/bikeApi")
+    setCountries(res.data.bikeApi)
+  }
   useEffect(() => {
-    getLocation();
-    // getLocationJs();
-  }, []);
+    fetchBike();
+  }, [])
 
-  const getLocation = async () => {
-    const location = await axios.get("https://ipapi.co/json");
-    setCurrLocation(location.data);
-  };
-  
-
-  
-  
-  // ------------------------- Option ---------------
-  const [loc, setLoc] = useState(currLocation.city);
-
-
-  const Delhi = event => {
-    setLoc("Delhi");
-  };
-
-
-  const Noida = event => {
-    setLoc("Noida");
-  };
-
-
-  const Gurugram = event => {
-    setLoc("Gurugram");
-  };
-
-
-  const Faridabad = event => {
-    setLoc("Faridabad");
-  };
-
-
-  const Ghaziabad = event => {
-    setLoc("Ghaziabad");
-  };
+  console.log(countries)
 
 
 
-  const ChooseLocation = event => {
-    setLoc(currLocation.city);
-  };
+
+
+  // const countries = [
+  //   {
+  //     name: 'ind', value: "in", cities: [
+  //       "del",
+  //       "mum"
+  //     ]
+  //   },
+  //   {
+  //     name: 'pa', value: "pk", cities: [
+  //       "lah",
+  //       "kar"
+  //     ]
+  //   },
+  //   {
+  //     name: 'ban', value: "bg", cities: [
+  //       "dak",
+  //       "chi"
+  //     ]
+  //   }
+  // ]
+
+
+
+
+
+
+  // ---------------------------------------------
+  // const [country, setCountry] = useState("");
+  const [country, setCountry] = useState({ name: "", value: "", cities: [] });
+
+
 
   return (
     <div>
-      <h2>Location: {loc}</h2>
-      
-      <div className="select-btn">
+      <div>Other</div>
+      <div>
+        {/* -------------------- 1st drop --------------- */}
+        <select
+          value={country}
+          onChange={(e) => {
+            console.log(e.target.value);
+            setCountry(e.target.value)
+          }}>
+          {
+            countries.map((item, index) => {
+              return <option value={index}>{item.name}</option>;
+            })
+          }
+        </select>
 
-      <button onClick={Delhi}>Delhi</button>
-      <button onClick={Noida}>Noida</button>
-      <button onClick={Gurugram}>Gurugram</button>
-      <button onClick={Ghaziabad}>Ghaziabad</button>
-      <button onClick={Faridabad}>Faridabad</button>
+        {/* -------------------- 1st drop --------------- */}
 
+        {/* <select value={country}>
+          {
+            countries.model.map((item, index) => {
+              return <option value={country}>{item}</option>
+            })
+          }
+        </select> */}
       </div>
-      <div className="select-locatin">      
-      <button onClick={ChooseLocation}><i class="fa-solid fa-location-crosshairs"></i></button>
 
-      </div>
 
-      <h2>City: {currLocation.city}</h2>
-      
+
+      <div></div>
     </div>
-  );
-};
+  )
+}
 
-export default Other;
+export default Other

@@ -1,4 +1,8 @@
 
+.team-main {
+  margin-bottom: 40px;
+}
+
 .team-head {
     font-family: poppins;
   }
@@ -20,20 +24,32 @@
   }
   .team-h-heading-3 {
     font-size: 2.8rem;
-    margin-left: 200px;
+    /* margin-left: 200px; */
+    width: 80%;
+    text-align: center;
+    margin: auto;
     font-weight: 600;
+    background-color: black;
+    box-shadow: rgba(255, 255, 255, 0.2) 2px 4px 10px;
+
+    margin-top: 20px;
+
   }
   .team-h-heading-3 span {
     color: red;
   }
   
 .team-content {
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-content: space-evenly;
     width: 90%;
     margin: auto;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 20px;
     /* margin-top: 20px; */
   
     /* height: 26x; */
@@ -52,8 +68,10 @@
     /* width: 200px; */
     height: 250px;
     border-radius: 20px;
+    border: solid 3px rgb(84, 84, 84);
   }
   .team-c-c-content {
+    width: 100%;
     font-family: poppins;
     color: rgb(160, 160, 160);
     font-size: 0.8rem;
@@ -72,7 +90,7 @@
     font-size: 1rem;
   }
   .team-c-c-c-text-3 {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   
   .team-c-c-c-links {
@@ -102,6 +120,7 @@
   }
 
   .team-content-text{
+    font-size: 1.1rem;
     padding: 10px 40px;
   }
   
@@ -114,6 +133,9 @@
   color: red;
 }
 
+.team-c-c-c-img{
+  display: none;
+}
 
   
   
@@ -123,14 +145,80 @@
     .team-main {
       padding: 20px;
     }
+
+  .team-head-c{
+    padding: 0px;
+  }
+
+    
+    
+    
     .team-h-heading-3 {
       font-size: 1.5rem;
-      margin-left: 0;
+      /* margin-left: 0; */
+      width: 100%;
+      margin-top: auto;
+      padding: 5px;
     }
   
     .team-c-col {
+      padding: 10px ;
       flex-direction: column;
+      gap: 10px;
     }
+    
+    .team-content-heading-1{
+      font-size: 1.3rem;
+      margin-top: 30px ;
+    }
+
+    .team-content-text{
+      padding: 5px 0 0 15px;
+      font-size: .9rem;
+    }
+    
+    
+    .team-content{
+      grid-template-columns: 1fr;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .team-c-c-c-text-c{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .team-c-c-c-text{
+      padding: 20px 10px;
+    }
+    
+    .team-c-c-c-img{
+      display: block;
+      width: 25%;
+    }
+    .team-c-c-c-img img{
+      width: 100%;
+      border-radius: 50%;
+      border: solid 2px;
+    }
+    .team-c-c-c-text-3{
+      margin: 10px;
+      margin-bottom: 0;
+      /* font-size: 1rem; */
+    }
+
+    .team-c-c-img{
+      display: none;
+    }
+  .team-c-c-c-text-1{
+    font-size: 1.2rem;
+  }  
+  .team-c-c-c-text-2{
+    font-size: .9rem;
+  }  
+    
   }
   
   /* ---------- our-team end ---------- */

@@ -33,7 +33,7 @@ const PriceComponent = () => {
             <div className='pricing-r-heading-2'>Welcome to <span> <i class="fa-solid fa-screwdriver-wrench"></i></span> Garage On Call</div>
 
             <div className='pricing-r-text-1'>Get 10 Days service warranty benefit.</div>
-            <br />
+            {/* <br /> */}
             <div className='pricing-r-text-2'>Doorstep two wheeler repairing service and labour charges.</div>
             <div className='pricing-r-text-2'>Parts and Oil Charges Extra.</div>
             <br />

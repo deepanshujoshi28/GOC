@@ -96,6 +96,7 @@
   .admin-page-main {
     margin: 25px;
     box-shadow: rgba(181, 181, 197, 0.28) 0px 7px 29px 0px;
+    
   }
 
   .admin-p-heading-1 {
@@ -193,7 +194,8 @@
   gap: 30px;
 }
 
-.bike-u-api-list-1{
+.bike-u-api-list-1,
+.bike-u-api-list-2{
   display: flex;
   align-items: start;
   gap: 40px;
@@ -209,16 +211,42 @@
   color: red;
 }
 
+.pp-1 {
+  /* padding-left: 1px; */
+
+}
+
 .bike-u-a-brand{
   font-size: 1.5rem;
   font-weight: 600;
+  width: 200px;
   /* border-right: solid gray; */
 }
+
+.bike-u-a-brand-heading{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: red;
+  width: 200px;
+
+}
+
 
 .bike-u-a-model{
   flex: 1;
   border-left: 3px solid gray;
+  padding: 10px 30px 10px 60px;
+}
+
+.bike-u-a-model-heading{
+  flex: 1;
+  border-left: 3px solid gray;
   padding-left: 60px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: red;
+
+
 }
 
 .bike-u-a-model ul{
@@ -231,5 +259,62 @@
   list-style-type: number;
 
 }
+
+@media only screen and (max-width: 500px){
+
+  
+.bike-m-ca-heading-1 {
+  font-size: 2rem;
+}
+
+.bike-m-ca-heading-2 {
+  font-size: 1.3rem;
+}
+
+  
+  
+  
+  .bike-u-api-list-2{
+    display: none;
+  }
+  .bike-u-api-list-1{
+    display: grid;
+    width: auto;
+    padding-left: 40px;
+    margin: 20px;
+    gap: 0;
+  box-shadow: rgba(216, 216, 216, 0.261) 0px 7px 15px 0px;
+
+  }
+
+  .bike-u-a-model ul{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* gap: 10px; */
+    padding: 10px 20px;
+  }
+  
+.bike-u-a-model{
+  flex: 1;
+  border-left: none;
+  padding: 0;
+}
+
+.bike-u-a-brand{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: red;
+}
+
+
+.bike-update-api-list{
+  margin-top: 0px;
+  gap: 0px;
+}
+
+
+  
+}
+
 
 

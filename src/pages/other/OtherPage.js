@@ -1,16 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import OurWork from '../../components/user/OurWork'
+import BlogBenefits from '../../components/user/SingleBlogs/BlogBenefits'
 
 const OtherPage = () => {
   return (
     <div>
-      OtherPage
-      <br />
-      <Link to="/admin">admin page</Link>
-
-      <OurWork />
-
+      <BlogBenefits/>
     </div>
   )
 }

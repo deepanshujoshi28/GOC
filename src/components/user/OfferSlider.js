@@ -3,6 +3,8 @@ import React from 'react'
 // import img2 from "../images/BIKE BANNER22222-02.jpg"
 import img1 from "../../images/offer-1.jpg"
 import img2 from "../../images/offer-2.jpg"
+import img3 from "../../images/offer-3.jpg"
+import img4 from "../../images/offer-4.jpg"
 
 import Slider from "react-slick";
 
@@ -67,13 +69,38 @@ const OfferSlider = () => {
                 {/* ---slide---- */}
                
                     <div className='offer-img'>
+                       <img src={img3} alt='offer_image'/>
+                    </div>
+                {/* ---slide---- */}
+               
+                    <div className='offer-img'>
+                       <img src={img4} alt='offer_image'/>
+                    </div>
+                {/* ---slide---- */}
+               
+                <div className='offer-img'>
                        <img src={img1} alt='offer_image'/>
                     </div>
+                
                 {/* ---slide---- */}
                
                     <div className='offer-img'>
                        <img src={img2} alt='offer_image'/>
                     </div>
+                {/* ---slide---- */}
+               
+                    <div className='offer-img'>
+                       <img src={img3} alt='offer_image'/>
+                    </div>
+                {/* ---slide---- */}
+               
+                    <div className='offer-img'>
+                       <img src={img4} alt='offer_image'/>
+                    </div>
+                
+
+
+
 
 
             </Slider>

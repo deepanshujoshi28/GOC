@@ -11,8 +11,9 @@ import './css/user/TestimonialPage.css'
 import './css/user/LocationPage.css'
 import './css/user/ServicePage.css'
 // import './css/other/Other.css'
-import './css/other/Animation.css'
 import './css/user/Button.css'
+import './css/user/SingleBlog.css'
+import './css/other/Animation.css'
 import './css/admin/AdminPage.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/user/Home';
@@ -34,6 +35,12 @@ import LocationPage from './pages/user/LocationPage';
 import TermConditionPage from './pages/user/TermConditionPage';
 import PrivacyPolicy from './pages/user/PrivacyPolicy';
 import ServicePage from './pages/user/ServicePage';
+import AdminBooking from './pages/admin/AdminBooking';
+import AdminFetchBikeApi from './pages/admin/AdminFetchBikeApi';
+import BlogServicing from './components/user/SingleBlogs/BlogServicing';
+import BlogBenefits from './components/user/SingleBlogs/BlogBenefits';
+import BlogTips from './components/user/SingleBlogs/BlogTips';
+import BlogCorona from './components/user/SingleBlogs/BlogCorona';
 
 
 function App() {
@@ -56,6 +63,13 @@ function App() {
 
 
 
+          <Route path='/porsche-cayenne-coupe-launched-in-india' element={<BlogServicing/>}></Route>
+          <Route path='/renault-sells-over-18000-units-with-the-triber-mpv-in-india' element={<BlogBenefits/>}></Route>
+          <Route path='/tata-hexa-offering-benefits-upto-₹-2-2-lakh' element={<BlogTips />}></Route>
+          <Route path='/corona-blog' element={<BlogCorona />}></Route>
+          
+
+
 
 
 
@@ -63,7 +77,9 @@ function App() {
 
           <Route path='/admin' element={<AdminHome />}></Route>
           <Route path='/admin-login' element={<AdminLogin />}></Route>
-          <Route path='/admin-bike-api' element={<AdminBikeApi />}></Route>
+          <Route path='/admin-create-bike-api' element={<AdminBikeApi />}></Route>
+          <Route path='/admin-bike-api' element={<AdminFetchBikeApi />}></Route>
+          <Route path='/admin-booking' element={<AdminBooking />}></Route>
           {/* <Route path='/admin-model-api' element={<AdminModelApi />}></Route> */}
 
 

@@ -31,7 +31,9 @@ const OurService = () => {
 
                         </div>
 
-                        <img src={img0} />
+                        <div className='ourService-img'>
+                            <img src={img0} />
+                        </div>
 
                         {/* <div className='our-s-img'>
                     <img className='our-s-img-1' src={img2} />

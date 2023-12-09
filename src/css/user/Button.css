@@ -208,11 +208,14 @@
 }
 
 .help-fix-btn i {
-  border: solid 2px white;
+  border: solid 3px white;
   color: red;
+  /* color: white; */
   border-radius: 50%;
   font-size: 3rem;
   background-color: white;
+  font-weight: bold;
+  /* background-color: red; */
 }
 
 .help-fix-form {

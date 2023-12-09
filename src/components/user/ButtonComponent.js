@@ -59,7 +59,7 @@ const ButtonComponent = () => {
 
 {toggle ?
         <div>
-          <button onClick={handleClick} className='help-fix-btn'><i class="fa-solid fa-circle-exclamation"></i>&nbsp;<span>Need Help? / any complaint?</span></button>
+          <button onClick={handleClick} className='help-fix-btn'><i class="fa-regular fa-circle-question"></i>&nbsp;<span>Need Help? / any complaint?</span></button>
           
         </div>
         :

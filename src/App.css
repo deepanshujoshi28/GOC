@@ -492,8 +492,14 @@ button {
   /* background-color: #ffd7d7; */
   /* border-radius: 20px; */
   background-color: #e82434;
-  width: 40%;
-  height: 45vh;
+  background-image: url(../src/images/bg-2.jpg);
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35%;
+  height: 60vh;
+  
   box-shadow: rgba(251, 251, 252, 0.373) 0px 7px 29px 0px;
   display: flex;
   flex-direction: column;
@@ -501,6 +507,7 @@ button {
   align-items: center;
   border-radius: 30px;
   padding-bottom: 30px;
+  color: white;
 }
 .offer-popup-main {
   display: flex;
@@ -885,4 +892,39 @@ button {
 }
 
 /* ---------- about end ---------- */
+
+
+
+
+.booked-page{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.booked-page-content{
+  background-color: black;
+  text-align: center;
+  padding: 50px;
+}
+
+.booked-page-headding-2{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+
+.booked-page-headding-2 span{
+  color: red;
+  font-size: 3rem;
+}
+
+.booked-page-headding-3{
+  font-size: 2.5rem;
+  color: red;
+  font-weight: 600;
+}
+
 

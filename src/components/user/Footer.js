@@ -14,7 +14,7 @@ const Footer = () => {
           {/* footer Head */}
           <div className='footer-head'>
             <div className='fh-logo'>
-              <div className='fh-l-logo'><Link to='/'><span> <i class="fa-solid fa-screwdriver-wrench"></i> Garage</span> On Call</Link></div>
+              <div className='fh-l-logo'><Link to='/'><span> <i className="fa-solid fa-screwdriver-wrench"></i> Garage</span> On Call</Link></div>
               <div className='fh-l-tagline'>ride with happiness</div>
             </div>
 
@@ -48,10 +48,10 @@ const Footer = () => {
               <div className='fc-c-h'>Contact</div>
               <div className='fc-c-c'>
 
-                <div><i class="fa-regular fa-envelope"></i> &ensp; support@garageoncall.com</div>
-                <div><i class="fa-solid fa-phone-volume"></i> &ensp; 0120 4225828</div>
-                <div><i class="fa-brands fa-whatsapp"></i> &ensp; +91 9658-124-124</div>
-                <div><i class="fa-solid fa-globe"></i> &ensp; https://garageoncall.com</div>
+                <div><i className="fa-regular fa-envelope"></i> &ensp; support@garageoncall.com</div>
+                <div><i className="fa-solid fa-phone-volume"></i> &ensp; 0120 4225828</div>
+                <div><i className="fa-brands fa-whatsapp"></i> &ensp; +91 9658-124-124</div>
+                <div><i className="fa-solid fa-globe"></i> &ensp; https://garageoncall.com</div>
 
               </div>
 
@@ -62,10 +62,10 @@ const Footer = () => {
               <div className='fc-c-h'>Social Media</div>
               <div className='fc-c-c f-bfr'>
 
-                <Link to="https://www.facebook.com/garageoncallofficial/" target='_blank'><i class="fa-brands fa-facebook-f"></i> &ensp; FaceBook</Link>
-                <Link to="https://twitter.com/i/flow/login?redirect_after_login=%2FGarageoncall" target='_blank'><i class="fa-brands fa-x-twitter"></i> &ensp; Twitter</Link>
-                <Link to="https://www.instagram.com/garageoncallofficial/" target='_blank'><i class="fa-brands fa-instagram"></i> &ensp; Instagram</Link>
-                <Link to="https://www.linkedin.com/company/garage-on-call/" target='_blank'><i class="fa-brands fa-linkedin-in"></i> &ensp; Linkedin</Link>
+                <Link to="https://www.facebook.com/garageoncallofficial/" target='_blank'><i className="fa-brands fa-facebook-f"></i> &ensp; FaceBook</Link>
+                <Link to="https://twitter.com/i/flow/login?redirect_after_login=%2FGarageoncall" target='_blank'><i className="fa-brands fa-x-twitter"></i> &ensp; Twitter</Link>
+                <Link to="https://www.instagram.com/garageoncallofficial/" target='_blank'><i className="fa-brands fa-instagram"></i> &ensp; Instagram</Link>
+                <Link to="https://www.linkedin.com/company/garage-on-call/" target='_blank'><i className="fa-brands fa-linkedin-in"></i> &ensp; Linkedin</Link>
 
               </div>
             </div>
@@ -101,7 +101,7 @@ const Footer = () => {
 
         </div>
 
-        <div className='footer-cc'>Copyright <i class="fa-regular fa-copyright"></i> 2022, Garage on Call. All Rights Reserved.</div>
+        <div className='footer-cc'>Copyright <i className="fa-regular fa-copyright"></i> 2022, Garage on Call. All Rights Reserved.</div>
 
       </div>
 

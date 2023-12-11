@@ -84,7 +84,7 @@ const Navbar = () => {
 
             <div className='nav-sticky'>
                 <header>
-                    <div className='nav-logo'><Link to='/'><span> <i class="fa-solid fa-screwdriver-wrench"></i> Garage</span> On Call</Link></div>
+                    <div className='nav-logo'><Link to='/'><span> <i className="fa-solid fa-screwdriver-wrench"></i> Garage</span> On Call</Link></div>
 
                     <nav ref={navRef}>
 
@@ -95,7 +95,7 @@ const Navbar = () => {
                         <Link to='/contact-us'>CONTACT</Link>
 
                         <div href='' className='nav-drop'>
-                            <span>COMPANY <i class="fa-solid fa-caret-down"></i></span>
+                            <span>COMPANY <i className="fa-solid fa-caret-down"></i></span>
                             <div className='nav-drop-content'>
                                 <div className='nav-d-c-link'>
                                     <Link to='/about-us'>About Us</Link>
@@ -109,9 +109,9 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <button className='nav-btn nav-close-btn' onClick={showNavbar}><i class="fa-solid fa-circle-xmark"></i></button>
+                        <button className='nav-btn nav-close-btn' onClick={showNavbar}><i className="fa-solid fa-circle-xmark"></i></button>
                     </nav>
-                    <button className='nav-btn menu-btn' onClick={showNavbar}><i class="fa-solid fa-bars"></i></button>
+                    <button className='nav-btn menu-btn' onClick={showNavbar}><i className="fa-solid fa-bars"></i></button>
                     <div className='nav-end'>
 
                         <div></div>
@@ -126,7 +126,7 @@ const Navbar = () => {
 
                             {/* <Link to='#' className='ld'><i class="fa-solid fa-cart-shopping"></i></Link> */}
                             <span  onClick={abab} className='nav-inp-spn'>
-                                <div className='nav-inp'>{loc}<span><i class="fa-solid fa-caret-down"></i></span></div>
+                                <div className='nav-inp'>{loc}<span><i className="fa-solid fa-caret-down"></i></span></div>
                                 {/* <input className='nav-inp'  value={loc} placeholder='Location..' /> */}
                                 {/* <i class="fa-solid fa-caret-down"></i> */}
                                 </span>
@@ -147,7 +147,7 @@ const Navbar = () => {
 
 
                 <div className="location-col" style={{ display: aba }}>
-                    <div className="closeLoc" onClick={closeLoc}><i class="fa-regular fa-circle-xmark"></i></div>
+                    <div className="closeLoc" onClick={closeLoc}><i className="fa-regular fa-circle-xmark"></i></div>
                     <div className="location-col-h1">Select Your City</div>
 
                     <div className="select-btn">
@@ -159,7 +159,7 @@ const Navbar = () => {
                     </div>
 
                     <div onClick={ChooseLocation} className="select-locatin">
-                        <i class="fa-solid fa-location-crosshairs"></i> Detect Location
+                        <i className="fa-solid fa-location-crosshairs"></i> Detect Location
                     </div>
 
                 </div>

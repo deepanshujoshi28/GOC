@@ -1,6 +1,76 @@
-import React from 'react'
+import React, { useState } from 'react'
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
+
 
 const ContactComponent = () => {
+
+
+
+  
+  // ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+  const [data, setData] = useState({
+    name: "",
+    city: "",
+    number: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setData({
+      ...data,
+      [e.target.name]: value
+    });
+  };
+
+
+
+  const navigate = useNavigate()
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const userData = {
+      name: data.name,
+      city: data.city,
+      number: data.number,
+      email: data.email,
+      subject: data.subject,
+      message: data.message
+    };
+    axios
+      .post("http://localhost:2000/contact", userData)
+      .then((response) => {
+        console.log(response);
+        navigate("/contact-confirm")
+      })
+      .catch((error) => {
+        if (error.response) {
+          console.log(error.response);
+          console.log("server responded");
+        } else if (error.request) {
+          console.log("network error");
+        } else {
+          console.log(error);
+        }
+      });
+  };
+
+
+  // -----------------------------------------------------------------------------------------------------------------------------
+
+  
+  
+  
+  
+  
   return (
     <div>
 
@@ -22,15 +92,15 @@ const ContactComponent = () => {
             <div className='contact-col-2-h3'>We're here to help you</div>
             <div className='contact-col-2-h4'>Fill out the form to contact our team.</div>
             {/* contact form */}
-            <form className='contact-frm'>
+            <form className='contact-frm'  onSubmit={handleSubmit}>
               <div>
-                <input placeholder='* Your Name ' />
-                <input placeholder='Your City' />
-                <input placeholder='* Your Number' type='number' />
-                <input placeholder='Your Email ' type='mail' />
+                <input required placeholder='* Your Name ' name='name' value={data.name} onChange={handleChange} />
+                <input placeholder='Your City' name='city' value={data.city} onChange={handleChange} />
+                <input required placeholder='* Your Number' type='number'name='number' value={data.number} onChange={handleChange} />
+                <input placeholder='Your Email ' type='mail'name='email' value={data.email} onChange={handleChange} />
               </div>
-              <input placeholder='Subject' />
-              <textarea rows="3" placeholder='* How can we help you?' />
+              <input placeholder='Subject' name='subject' value={data.subject} onChange={handleChange}/>
+              <textarea required rows="3" placeholder='* How can we help you?' name='message' value={data.message} onChange={handleChange}/>
               <button>Contact</button>
             </form>
             {/* form end */}

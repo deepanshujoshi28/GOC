@@ -41,6 +41,8 @@ import BlogServicing from './components/user/SingleBlogs/BlogServicing';
 import BlogBenefits from './components/user/SingleBlogs/BlogBenefits';
 import BlogTips from './components/user/SingleBlogs/BlogTips';
 import BlogCorona from './components/user/SingleBlogs/BlogCorona';
+import BookedPage from './pages/user/BookedPage';
+import ContactMessagePage from './pages/user/ContactMessagePage';
 
 
 function App() {
@@ -60,6 +62,8 @@ function App() {
           <Route path='/disclaimer' element={<TermConditionPage />}></Route>
           <Route path='/privacy-policy' element={<PrivacyPolicy />}></Route>
           <Route path='/our-service' element={<ServicePage />}></Route>
+          <Route path='/booking-confirm' element={<BookedPage />}></Route>
+          <Route path='/contact-confirm' element={<ContactMessagePage />}></Route>
 
 
 

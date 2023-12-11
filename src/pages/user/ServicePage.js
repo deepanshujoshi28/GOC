@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/user/Navbar'
 import Footer from '../../components/user/Footer'
+import ButtonComponent from '../../components/user/ButtonComponent'
 
 const ServicePage = () => {
   return (
@@ -78,6 +79,8 @@ const ServicePage = () => {
 
 
       <Footer />
+      <ButtonComponent />
+
     </div>
   )
 }

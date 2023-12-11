@@ -547,15 +547,15 @@ button {
 }
 
 .offer-claim {
-  color: #db2b39;
+  color: #ffffff;
   font-weight: bold;
   font-size: x-large;
   font-size: 1.4rem;
   padding: 4px 10px;
-  background-color: white;
+  background-color: rgb(255, 0, 0);
   text-decoration: none;
-  border-radius: 10px;
-  border: none;
+  border-radius: 50px;
+  border: solid 2px;
 }
 
 /* offer-2 */

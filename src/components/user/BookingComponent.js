@@ -167,7 +167,7 @@ const BookingComponent = () => {
           className="select-bike-inp ">
             <option disabled selected>Select Brand</option>
             {brand.map((e) => {
-            return <option value={e._id}>{e.brand}</option>
+            return <option name='brand' value={e._id}>{e.brand}</option>
           })}  
             
             {/* <option>Bike Brand 1</option>

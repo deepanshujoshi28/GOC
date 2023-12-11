@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from '../../components/user/Navbar'
 import Footer from '../../components/user/Footer'
 import BookingComponent from '../../components/user/BookingComponent'
+import ButtonComponent from '../../components/user/ButtonComponent'
+
 
 const BookingPage = () => {
   return (
@@ -12,6 +14,8 @@ const BookingPage = () => {
         <BookingComponent />
 
         <Footer />
+        <ButtonComponent />
+
     </div>
   )
 }

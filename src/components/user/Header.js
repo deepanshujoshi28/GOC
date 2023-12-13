@@ -80,7 +80,7 @@ export const Header = () => {
                   onChange={handleChange}
              />
             <br />
-            <button  type="submit">BOOK NOW</button>
+            <button  type="submit"><div className="pop-outin">BOOK NOW</div></button>
           </form>
 
           <div className='header-c-inc'>

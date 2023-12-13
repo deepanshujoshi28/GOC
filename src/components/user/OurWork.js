@@ -18,7 +18,7 @@ const OurWork = () => {
                         <div className=''>Convenience at Your Doorstep</div>
                         <div className=''>Expert Technicians</div>
                         <div className=''>Transparent Pricing</div>
-                        <div className=''>Quality Parts</div>
+                        <div className=''>Genuine Parts and Lubricants</div>
                         <div className=''>Customer Satisfaction Guaranteed</div>
                         <div className=''>Prompt and Professional Service</div>
                     </div>

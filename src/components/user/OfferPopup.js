@@ -80,7 +80,7 @@ const OfferPopup = ({ open, onClose }) => {
                   value={data.phone}
                   onChange={handleChange}
                 /><br />
-                <button className='offer-claim' type="submit" >Book Service</button>
+                <button className='offer-claim' type="submit" ><div className="pop-outin">Book Service</div></button>
 
               </form>
             </div>

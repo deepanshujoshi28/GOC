@@ -47,8 +47,8 @@ const OurService = () => {
                                 <div>Convenience at Your Doorstep</div>
                                 <div>Customer Satisfaction Guaranteed</div>
                                 <div>Prompt and Professional Service</div>
+                                <div>Genuine Parts and Lubricants</div>
                                 <div>Transparent Pricing</div>
-                                <div>Genuine Parts</div>
                                 {/* <div></div> */}
 
                                 {/* <div>Available in <span>Delhi</span></div>

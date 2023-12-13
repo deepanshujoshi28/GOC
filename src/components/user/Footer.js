@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
 
             <div className='fh-address'>
-              <div className='fh-address-h'>Head Office</div>
+              <div className='fh-address-h'>Corporate Office</div>
               <div className='fh-address-p'>210, 2nd Floor, Ocean Plaza, Sector-18, Noida - 201301</div>
             </div>
           </div>

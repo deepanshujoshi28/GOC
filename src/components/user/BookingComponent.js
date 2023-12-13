@@ -228,7 +228,7 @@ const BookingComponent = () => {
         <input required className='select-bike-inp text-center' type='number' placeholder='* Enter your phone number'  name='number' value={data.number} onChange={handleChange}  />
         <input className='select-bike-inp text-center' type='text' placeholder='Enter your address' name='address' value={data.address} onChange={handleChange}  />
         <input  className='select-bike-inp text-center' type='text' placeholder='any message !'  name='otherModel' value={data.otherModel} onChange={handleChange}  />
-        <button className='select-bike-btn '>BOOK SERVICE </button>
+        <button className='select-bike-btn '><div className='pop-outin'>BOOK SERVICE</div> </button>
       </form>
       
     </div>

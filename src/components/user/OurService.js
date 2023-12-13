@@ -41,14 +41,14 @@ const OurService = () => {
                 </div> */}
 
                         <div className='our-s-col-2'>
-                            <div className='our-s-c-heading'>Benefit</div>
+                            <div className='our-s-c-heading'>Benefits</div>
                             <div className='our-s-l-points'>
                                 <div>Expert Technicians</div>
                                 <div>Convenience at Your Doorstep</div>
                                 <div>Customer Satisfaction Guaranteed</div>
                                 <div>Prompt and Professional Service</div>
                                 <div>Transparent Pricing</div>
-                                <div>Quality Parts</div>
+                                <div>Genuine Parts</div>
                                 {/* <div></div> */}
 
                                 {/* <div>Available in <span>Delhi</span></div>

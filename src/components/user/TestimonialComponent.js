@@ -63,7 +63,7 @@ const TestimonialComponent = () => {
                   </div>
                 <div className='tes-s-icon'>”</div>
                 <div className='tes-s-user'>
-                  <div className='tes-s-image'><img src={img} /></div>
+                   
                   <div className='tes-s-name'>
                   {/* -------- name --------- */}
                   Lalita Kumari
@@ -104,7 +104,7 @@ const TestimonialComponent = () => {
                   </div>
                 <div className='tes-s-icon'>”</div>
                 <div className='tes-s-user'>
-                  <div className='tes-s-image'><img src={img} /></div>
+                   
                   <div className='tes-s-name'>
                   Ashutosh Ranjan
                   </div>
@@ -141,7 +141,7 @@ const TestimonialComponent = () => {
                   </div>
                 <div className='tes-s-icon'>”</div>
                 <div className='tes-s-user'>
-                  <div className='tes-s-image'><img src={img} /></div>
+                   
                   <div className='tes-s-name'>
                   {/* -------- name --------- */}
                   Amit Dutt Srivastava
@@ -185,7 +185,7 @@ const TestimonialComponent = () => {
                   </div>
                 <div className='tes-s-icon'>”</div>
                 <div className='tes-s-user'>
-                  <div className='tes-s-image'><img src={img} /></div>
+                   
                   <div className='tes-s-name'>
                   {/* -------- name --------- */}
                   Shivam Singh
@@ -228,7 +228,7 @@ const TestimonialComponent = () => {
                   </div>
                 <div className='tes-s-icon'>”</div>
                 <div className='tes-s-user'>
-                  <div className='tes-s-image'><img src={img} /></div>
+                   
                   <div className='tes-s-name'>
                   {/* -------- name --------- */}
                   Shradul Singh
@@ -271,7 +271,7 @@ const TestimonialComponent = () => {
                   </div>
                 <div className='tes-s-icon'>”</div>
                 <div className='tes-s-user'>
-                  <div className='tes-s-image'><img src={img} /></div>
+                   
                   <div className='tes-s-name'>
                   {/* -------- name --------- */}
                   Swatantra Srivastava 
@@ -311,7 +311,7 @@ const TestimonialComponent = () => {
                   </div>
                 <div className='tes-s-icon'>”</div>
                 <div className='tes-s-user'>
-                  <div className='tes-s-image'><img src={img} /></div>
+                   
                   <div className='tes-s-name'>
                   {/* -------- name --------- */}
                   Durva Joshi
@@ -350,7 +350,7 @@ const TestimonialComponent = () => {
                   </div>
                 <div className='tes-s-icon'>”</div>
                 <div className='tes-s-user'>
-                  <div className='tes-s-image'><img src={img} /></div>
+                   
                   <div className='tes-s-name'>
                   {/* -------- name --------- */}
                   Imran Imran

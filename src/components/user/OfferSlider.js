@@ -51,7 +51,7 @@ const OfferSlider = () => {
   return (
     <div className='offer-main'>
 
-<div className='offer-heading'>Top Offers</div>
+{/* <div className='offer-heading'>Top Offers</div> */}
         <div className='offer-slider'>
 
         <Slider {...settings}>

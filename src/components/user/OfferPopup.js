@@ -14,7 +14,9 @@ const OfferPopup = ({ open, onClose }) => {
   const navigate = useNavigate()
 
   const handleChange = (e) => {
-    const value = e.target.value;
+    
+  const limit = 10;
+    const value = e.target.value.slice(0, limit);
     setData({
       ...data,
       [e.target.name]: value

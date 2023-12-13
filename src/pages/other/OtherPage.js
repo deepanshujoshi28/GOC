@@ -42,8 +42,8 @@ const OtherPage = () => {
         />
         <button onClick={PostData}>submit</button>
       </form> */}
-{/* <Other/> */}
-      <OtherAA />
+<Other/>
+      {/* <OtherAA /> */}
 
 
     </div>

@@ -20,6 +20,7 @@ const BookingComponent = () => {
   // ---------------------------------------------------------------------------
 
   
+  const [modelName, setModelName] = useState()
  
   const [id, setId] = useState("6575cf9ae07dced455d8abf5")
   const [brand, setBrand] = useState([])
@@ -29,17 +30,40 @@ const BookingComponent = () => {
     console.log('data', res.data.bikeApi)
     setBrand(res.data.bikeApi)
 
-    const resp = await axios.get(`http://localhost:2000/bikeApi/${id}`)
-    console.log('resp', resp.data.bikeApi.model)
-    setModel(resp.data.bikeApi.model)
   }
+
+
 
   useEffect(() => {
     fetchBrand();
   }, [])
 
+ 
 
 
+  
+  const fetchmodel = async () => {
+
+    const resp = await axios.get(`http://localhost:2000/bikeApi/${id}`)
+    // console.log('resp', resp.data.bikeApi.model)
+    setModel(resp.data.bikeApi.model)
+    
+  }
+
+
+  const clickHandle = ((e) => {
+    // console.log(11)
+    fetchmodel()
+    
+  })
+  
+  
+  const modelChange = ((e)=>{
+    setModelName(e.target.value)
+    console.log(e.target.value)
+    
+  })
+  
 
   
 
@@ -47,9 +71,10 @@ const BookingComponent = () => {
   // ----------------------------------------------------------------------------------------------------------------------------------------------------
 
   
+
   const [data, setData] = useState({
-    brand: "",
     model: "",
+    otherModel: "",
     number: "",
     address: "",
   });
@@ -71,8 +96,8 @@ const BookingComponent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const userData = {
-      brand: data.brand,
-      model: data.model,
+      model: modelName,
+      otherModel: data.otherModel,
       number: data.number,
       address: data.address,
     };
@@ -152,11 +177,11 @@ const BookingComponent = () => {
       </div>
 
     </div>
-
+  
 
 
     <div>
-      <form className='sb-col-3 select-bike-form'  onSubmit={handleSubmit}>
+      <form className='sb-col-3 select-bike-form'  onClick={clickHandle}  onSubmit={handleSubmit}>
         <div className='sb-c3-1'>
 
           <select 
@@ -179,12 +204,12 @@ const BookingComponent = () => {
             <option>3 Bike Brand</option>
             <option>4 Bike Brand</option> */}
           </select>
-          <select className="select-bike-inp">
-            <option disabled selected>Select Model</option>
+          <select className="select-bike-inp" onChange={modelChange} name='model' >
+            <option disabled selected>--- Select Model ---</option>
             {
               
             model.map((e) => {
-              return <option>{e}</option>
+              return <option value={e}>{e}</option>
             })
           }
                         
@@ -200,8 +225,9 @@ const BookingComponent = () => {
         </div>
         {/* <form></form> */}
         {/* <textarea className="select-bike-inp" placeholder='Enter your address...'></textarea> */}
-        <input required className='select-bike-inp text-center' type='number' placeholder='Enter your phone number'  name='number' value={data.number} onChange={handleChange}  />
+        <input required className='select-bike-inp text-center' type='number' placeholder='* Enter your phone number'  name='number' value={data.number} onChange={handleChange}  />
         <input className='select-bike-inp text-center' type='text' placeholder='Enter your address' name='address' value={data.address} onChange={handleChange}  />
+        <input  className='select-bike-inp text-center' type='text' placeholder='any message !'  name='otherModel' value={data.otherModel} onChange={handleChange}  />
         <button className='select-bike-btn '>BOOK SERVICE </button>
       </form>
       

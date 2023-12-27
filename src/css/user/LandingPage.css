@@ -154,6 +154,70 @@
   padding: 10px;
 }
 
+
+/* --------------------- price ------------------ */
+
+.landing-page-price-check-heading span{
+    color: white;
+}
+.landing-page-price-check-heading{
+    font-size: 2rem;
+    font-weight: 600;
+    color: red;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.landing-page-price-check{
+    border: red solid 3px;
+    border-radius: 20px;
+}
+
+.landing-page-price{
+    margin: 50px 100px;
+}
+
+.landing-page-price-check-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* margin-left: 190px; */
+    gap: 30px 10px;
+    padding: 40px 0 40px 80px;
+
+    
+    /* text-align: center; */
+}
+
+
+
+
+
+
+@media only screen and (max-width: 400px) {
+    .landing-page-nav-logo i{
+        font-size: 1rem;
+    }
+    .landing-page-nav-logo{
+        font-size: 1.1rem;
+    }
+
+    .landing-page-nav-buttons{
+        gap: 5px;
+    }
+    .landing-page-nav-buttons a{
+        font-size: .8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 800px) {
   .landing-page-header-top {
     padding: 5px 5px ;
@@ -250,26 +314,26 @@
     font-size: 1.1rem;
     padding: 10px;
   }
+
+  /* --------- price --------- */
+
+  .landing-page-price{
+    margin: 20px 10px;
+  }
+  
+  .landing-page-price-check-heading{
+    font-size: 1.5rem;
+    padding: 10px 40px;
+  }
+
+  .landing-page-price-check-list{
+    padding: 10px 0 20px 20px;
+    /* padding-left: 20px; */
+    font-size: .8rem;
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+  
   
   
 }
-
-@media only screen and (max-width: 400px) {
-    .landing-page-nav-logo i{
-        font-size: 1rem;
-    }
-    .landing-page-nav-logo{
-        font-size: 1.1rem;
-    }
-
-    .landing-page-nav-buttons{
-        gap: 5px;
-    }
-    .landing-page-nav-buttons a{
-        font-size: .8rem;
-    }
-}
-
-
-
-

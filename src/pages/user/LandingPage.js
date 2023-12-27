@@ -7,6 +7,7 @@ const LandingPage = () => {
     return (
         <div>
             <div className='landing-page'>
+                {/* ------------ lp-header -------------- */}
                 <div className='landing-page-header'>
                     {/* ----------- col-1 ------------ */}
                     <div className='landing-page-header-top'>
@@ -17,7 +18,7 @@ const LandingPage = () => {
                     {/* ----------- col-2 ------------ */}
                     <div className='landing-page-nav'>
                         <div className='landing-page-nav-logo'>
-                            <Link to="" ><span> <i className="fa-solid fa-screwdriver-wrench"></i> Garage</span> On Call</Link>
+                            <Link to="/" ><span> <i className="fa-solid fa-screwdriver-wrench"></i> Garage</span> On Call</Link>
                         </div>
                         <div className='landing-page-nav-buttons'>
                             <Link to="tel:01204225828">CALL NOW</Link>
@@ -65,7 +66,7 @@ const LandingPage = () => {
                         <div className='landing-page-header-content-col-2'>
                             <div className='landing-page-header-content-col-2-img'><img src={img2} /></div>
                             <div className='landing-page-header-content-col-2-form'>
-                                <div className='landing-page-header-content-col-2-form-heading'><img src={img2}/><span>Best <span>Bike Service</span> <br />At Your Home</span></div>
+                                <div className='landing-page-header-content-col-2-form-heading'><img src={img2} /><span>Best <span>Bike Service</span> <br />At Your Home</span></div>
                                 <form>
                                     <input type='number' placeholder='Enter Your Number' />
                                     <input placeholder='Enter Your City' />
@@ -87,6 +88,37 @@ const LandingPage = () => {
 
 
                 </div>
+
+
+                <div className='landing-page-price'>
+                    <div className='landing-page-price-check'>
+                        <div className='landing-page-price-check-heading'>General Bike Service <span>Check-list</span></div>
+                        <div className='landing-page-price-check-list'>
+                            <div>&#9989; Engine Oil Change (Price Extra)</div>
+                            <div>&#9989; Oil Filter Clean/Replace (if Replace Charges)</div>
+                            <div>&#9989; Air Filter Clean/Replace (if Replace Charges)</div>
+                            <div>&#9989; Spark Plug Clean/Replace (if Replace Charges)</div>
+                            <div>&#9989; Tightening of Screws, Bolts &amp; Nuts</div>
+                            <div>&#9989; Average and Performance Check-up</div>
+                            <div>&#9989; Brakes – Front &amp; Rear Adjust</div>
+                            <div>&#9989; Driven Chain Basic Cleaning</div>
+                            <div>&#9989; Carburettor Basic Check-up</div>
+                            <div>&#9989; Minor Electrical Check-up</div>
+                            <div>&#9989; Battery General Check-up</div>
+                            <div>&#9989; Basic Engine Inspection</div>
+                            <div>&#9989; Basic Fork Inspection</div>
+                            <div>&#9989; Basic Hand Cleaning</div>
+                        </div>
+                    </div>
+                    <div className='landing-page-price-button'></div>
+
+                </div>
+
+
+
+
+
+
 
             </div>
         </div>

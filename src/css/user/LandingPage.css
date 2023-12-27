@@ -211,7 +211,7 @@
   grid-template-columns: repeat(3, 1fr);
   /* margin-left: 190px; */
   gap: 30px 10px;
-  padding: 40px 0 40px 80px;
+  padding: 40px 20px 40px 50px;
 
   /* text-align: center; */
 }
@@ -460,7 +460,7 @@
 
   .landing-page-footer-content{
     grid-template-columns: 1fr;
-    padding: 30px 10px;
+    padding: 30px 10px 80px;
     gap: 50px;
   }
 

@@ -16,6 +16,15 @@
   justify-content: space-between;
   padding: 3px 110px;
 }
+.landing-page-header-top a{
+  color: white;
+  font-weight: 600;
+}
+.landing-page-header-top a:hover{
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
 
 .landing-page-nav-logo {
   font-size: 2rem;
@@ -38,6 +47,13 @@
   border-radius: 10px;
   font-weight: 500;
   font-size: 1.1rem;
+}
+.landing-page-nav-buttons a:hover {
+  transition: .5s;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+  font-weight: 600;
+
 }
 
 .landing-page-header-content {
@@ -146,12 +162,29 @@
   font-weight: 600;
 }
 
+.landing-page-header-content-col-2-form form button:hover{
+  background-color: white;
+  color: red;
+  transition: .5s;
+/* font-weight: 700; */
+}
+
+
 .landing-page-header-bottom {
   background-color: red;
   font-size: 1.5rem;
   text-align: center;
   font-weight: 600;
   padding: 10px;
+}
+.landing-page-header-bottom a{
+  color: white;
+}
+.landing-page-header-bottom a:hover{
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  transition: .5s;
+
 }
 
 /* --------------------- price ------------------ */
@@ -178,7 +211,7 @@
 
 .landing-page-price-check-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   /* margin-left: 190px; */
   gap: 30px 10px;
   padding: 40px 0 40px 80px;
@@ -218,6 +251,14 @@
   font-size: 1.1rem;
   border: solid 4px;
 }
+
+.landing-page-price-button-col-button:hover {
+  transition: .6s;
+  background-color: red;
+  border: rgb(255, 255, 255) solid 4px;
+  color: white;
+}
+
 
 @media only screen and (max-width: 800px) {
   .landing-page-header-top {
@@ -334,6 +375,7 @@
   .landing-page-price-button {
     display: flex;
     overflow: auto;
+    overflow-y: hidden;
     gap: 20px;
     justify-content: space-between;
   }

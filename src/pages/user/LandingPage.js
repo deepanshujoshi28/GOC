@@ -2,6 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import img1 from '../../images/bike-parts.png'
 import img2 from '../../images/mechanic.png'
+import OurService from '../../components/user/OurService'
+import OurWork from '../../components/user/OurWork'
+import TestimonialComponent from '../../components/user/TestimonialComponent'
+import ButtonComponent from '../../components/user/ButtonComponent'
 
 const LandingPage = () => {
     return (
@@ -11,8 +15,8 @@ const LandingPage = () => {
                 <div className='landing-page-header'>
                     {/* ----------- col-1 ------------ */}
                     <div className='landing-page-header-top'>
-                        <span><i class="fa-solid fa-envelope"></i> support@garageoncall.com</span>
-                        <span><i class="fa-solid fa-square-phone"></i> +91-9658 124 124</span>
+                        <Link to="mailto:support@garageoncall.com"><i class="fa-solid fa-envelope"></i> support@garageoncall.com</Link>
+                        <Link to="tel:01204225828"><i class="fa-solid fa-square-phone"></i> +91-9658 124 124</Link>
                     </div>
 
                     {/* ----------- col-2 ------------ */}
@@ -66,9 +70,9 @@ const LandingPage = () => {
                         <div className='landing-page-header-content-col-2'>
                             <div className='landing-page-header-content-col-2-img'><img src={img2} /></div>
                             <div className='landing-page-header-content-col-2-form'>
-                                <div className='landing-page-header-content-col-2-form-heading'><img src={img2} /><span>Best <span>Bike Service</span> <br />At Your Home</span></div>
+                                <div id='landingForm' className='landing-page-header-content-col-2-form-heading'><img src={img2} /><span>Best <span>Bike Service</span> <br />At Your Home</span></div>
                                 <form>
-                                    <input type='number' placeholder='Enter Your Number' />
+                                    <input required type='number' placeholder='Enter Your Number' />
                                     <input placeholder='Enter Your City' />
                                     <button>BOOK NOW</button>
                                 </form>
@@ -78,17 +82,10 @@ const LandingPage = () => {
 
                     </div>
 
-
-
-
-
                     {/* ----------- col-4 ------------ */}
-                    <div className='landing-page-header-bottom'>Mechanic on Call : +91-9658 124 124</div>
-
-
+                    <div className='landing-page-header-bottom'>Mechanic on Call : <Link to="tel:01204225828"> +91-9658 124 124</Link></div>
 
                 </div>
-
 
                 <div className='landing-page-price'>
                     <div className='landing-page-price-check'>
@@ -118,20 +115,17 @@ const LandingPage = () => {
                             <Link to='' className='landing-page-price-button-col-button'>BOOK NOW</Link>
                         </div>
 
-
                         <div className='landing-page-price-button-col'>
                             <div className='landing-page-price-button-col-heading-1'>125 CC to 199 CC</div>
                             <div className='landing-page-price-button-col-heading-2'>Rs. 399 /-</div>
                             <Link to='' className='landing-page-price-button-col-button'>BOOK NOW</Link>
                         </div>
 
-
                         <div className='landing-page-price-button-col'>
                             <div className='landing-page-price-button-col-heading-1'>200 CC to 299 CC</div>
                             <div className='landing-page-price-button-col-heading-2'>Rs. 499 /-</div>
                             <Link to='' className='landing-page-price-button-col-button'>BOOK NOW</Link>
                         </div>
-
 
                         <div className='landing-page-price-button-col'>
                             <div className='landing-page-price-button-col-heading-1'>Above 300 CC</div>
@@ -143,13 +137,14 @@ const LandingPage = () => {
 
                 </div>
 
-
-
-
-
-
-
             </div>
+
+            <div className='home-pg-padding'><OurService /></div>
+
+            <OurWork />
+            <TestimonialComponent />
+            <ButtonComponent />
+
         </div>
     )
 }

@@ -33,6 +33,7 @@ const Footer = () => {
               <div className='fc-c-h'>Comapny</div>
               <div className='fc-c-c f-bfr'>
 
+                <Link to="/welcome">Welcome</Link>
                 <Link to="/about-us">About Us</Link>
                 <Link to="/contact-us">Contact Us</Link>
                 <Link to="/privacy-policy">Privacy Policy</Link>

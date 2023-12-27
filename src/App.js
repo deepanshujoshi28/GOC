@@ -10,6 +10,7 @@ import './css/user/TeamPage.css'
 import './css/user/TestimonialPage.css'
 import './css/user/LocationPage.css'
 import './css/user/ServicePage.css'
+import './css/user/LandingPage.css'
 // import './css/other/Other.css'
 import './css/user/Button.css'
 import './css/user/SingleBlog.css'
@@ -43,6 +44,7 @@ import BlogTips from './components/user/SingleBlogs/BlogTips';
 import BlogCorona from './components/user/SingleBlogs/BlogCorona';
 import BookedPage from './pages/user/BookedPage';
 import ContactMessagePage from './pages/user/ContactMessagePage';
+import LandingPage from './pages/user/LandingPage';
 
 
 function App() {
@@ -64,6 +66,8 @@ function App() {
           <Route path='/our-service' element={<ServicePage />}></Route>
           <Route path='/booking-confirm' element={<BookedPage />}></Route>
           <Route path='/contact-confirm' element={<ContactMessagePage />}></Route>
+
+          <Route path='/welcome' element={<LandingPage />}></Route>
 
 
 

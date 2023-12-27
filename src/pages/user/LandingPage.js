@@ -26,7 +26,7 @@ const LandingPage = () => {
                         </div>
                         <div className='landing-page-nav-buttons'>
                             <Link to="tel:01204225828">CALL NOW</Link>
-                            <Link to="">BOOK NOW</Link>
+                            <a href='#landingForm'>BOOK NOW</a>
                         </div>
 
                     </div>
@@ -67,10 +67,10 @@ const LandingPage = () => {
                         </div>
 
                         {/* ---------- lp-c-col-2 ---------- */}
-                        <div className='landing-page-header-content-col-2'>
+                        <div id='landingForm' className='landing-page-header-content-col-2'>
                             <div className='landing-page-header-content-col-2-img'><img src={img2} /></div>
                             <div className='landing-page-header-content-col-2-form'>
-                                <div id='landingForm' className='landing-page-header-content-col-2-form-heading'><img src={img2} /><span>Best <span>Bike Service</span> <br />At Your Home</span></div>
+                                <div className='landing-page-header-content-col-2-form-heading'><img src={img2} /><span>Best <span>Bike Service</span> <br />At Your Home</span></div>
                                 <form>
                                     <input required type='number' placeholder='Enter Your Number' />
                                     <input placeholder='Enter Your City' />
@@ -112,25 +112,25 @@ const LandingPage = () => {
                         <div className='landing-page-price-button-col'>
                             <div className='landing-page-price-button-col-heading-1'>Below 125 CC</div>
                             <div className='landing-page-price-button-col-heading-2'>Rs. 299 /-</div>
-                            <Link to='' className='landing-page-price-button-col-button'>BOOK NOW</Link>
+                            <a href='#landingForm'className='landing-page-price-button-col-button'>BOOK NOW</a>
                         </div>
 
                         <div className='landing-page-price-button-col'>
                             <div className='landing-page-price-button-col-heading-1'>125 CC to 199 CC</div>
                             <div className='landing-page-price-button-col-heading-2'>Rs. 399 /-</div>
-                            <Link to='' className='landing-page-price-button-col-button'>BOOK NOW</Link>
+                            <a href='#landingForm' className='landing-page-price-button-col-button'>BOOK NOW</a>
                         </div>
 
                         <div className='landing-page-price-button-col'>
                             <div className='landing-page-price-button-col-heading-1'>200 CC to 299 CC</div>
                             <div className='landing-page-price-button-col-heading-2'>Rs. 499 /-</div>
-                            <Link to='' className='landing-page-price-button-col-button'>BOOK NOW</Link>
+                            <a href='#landingForm' className='landing-page-price-button-col-button'>BOOK NOW</a>
                         </div>
 
                         <div className='landing-page-price-button-col'>
                             <div className='landing-page-price-button-col-heading-1'>Above 300 CC</div>
                             <div className='landing-page-price-button-col-heading-2'>Rs. 599 /-</div>
-                            <Link to='' className='landing-page-price-button-col-button'>BOOK NOW</Link>
+                            <a href='#landingForm' className='landing-page-price-button-col-button'>BOOK NOW</a>
                         </div>
 
                     </div>

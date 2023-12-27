@@ -16,11 +16,11 @@
   justify-content: space-between;
   padding: 3px 110px;
 }
-.landing-page-header-top a{
+.landing-page-header-top a {
   color: white;
   font-weight: 600;
 }
-.landing-page-header-top a:hover{
+.landing-page-header-top a:hover {
   font-weight: 700;
   text-decoration: none;
   color: black;
@@ -49,11 +49,10 @@
   font-size: 1.1rem;
 }
 .landing-page-nav-buttons a:hover {
-  transition: .5s;
+  transition: 0.5s;
   background-color: rgb(255, 255, 255);
   color: rgb(255, 0, 0);
   font-weight: 600;
-
 }
 
 .landing-page-header-content {
@@ -162,13 +161,12 @@
   font-weight: 600;
 }
 
-.landing-page-header-content-col-2-form form button:hover{
+.landing-page-header-content-col-2-form form button:hover {
   background-color: white;
   color: red;
-  transition: .5s;
-/* font-weight: 700; */
+  transition: 0.5s;
+  /* font-weight: 700; */
 }
-
 
 .landing-page-header-bottom {
   background-color: red;
@@ -177,14 +175,13 @@
   font-weight: 600;
   padding: 10px;
 }
-.landing-page-header-bottom a{
+.landing-page-header-bottom a {
   color: white;
 }
-.landing-page-header-bottom a:hover{
+.landing-page-header-bottom a:hover {
   color: rgb(0, 0, 0);
   font-weight: 800;
-  transition: .5s;
-
+  transition: 0.5s;
 }
 
 /* --------------------- price ------------------ */
@@ -253,12 +250,11 @@
 }
 
 .landing-page-price-button-col-button:hover {
-  transition: .6s;
+  transition: 0.6s;
   background-color: red;
   border: rgb(255, 255, 255) solid 4px;
   color: white;
 }
-
 
 @media only screen and (max-width: 800px) {
   .landing-page-header-top {
@@ -381,18 +377,16 @@
   }
 
   .landing-page-price-button-col-heading-1 {
-      width: 190px;
-      font-size: 1.3rem;
-    }
-    .landing-page-price-button-col-heading-2 {
-        font-size: 1.3rem;
-    }
+    width: 190px;
+    font-size: 1.3rem;
+  }
+  .landing-page-price-button-col-heading-2 {
+    font-size: 1.3rem;
+  }
 
-  .landing-page-price-button{
+  .landing-page-price-button {
     margin: 0 30px;
   }
-  
-  
 }
 
 @media only screen and (max-width: 400px) {

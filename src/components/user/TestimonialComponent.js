@@ -346,7 +346,7 @@ const TestimonialComponent = () => {
                 <div className='tes-s-icon'>“</div>
                 <div className='tes-s-comment'>
              {/* --------- comment ---------------- */}
-             mechanic but even after a whole day keeping it with them they were not able to start it. Just gave GARAGE ON CALL mechanics a call and they reached at the exact same time as was told. Within 1 and half hours they got bike started. Even i didn't spent that much as i was expecting. All in all the best experience. Will highly recommend them.
+             mechanic but even after a whole day keeping it with them they were not able to start it. Just gave GARAGE ON CALL mechanics a call and they reached at the exact same time as was told. Within 1 and half hours they got bike started. Even i didn't spent that much as i was expecting.
                   </div>
                 <div className='tes-s-icon'>”</div>
                 <div className='tes-s-user'>

@@ -255,6 +255,9 @@
 }
 
 @media only screen and (max-width: 400px) {
+    .landing-page-nav-logo i{
+        font-size: 1rem;
+    }
     .landing-page-nav-logo{
         font-size: 1.1rem;
     }
@@ -262,7 +265,9 @@
     .landing-page-nav-buttons{
         gap: 5px;
     }
-
+    .landing-page-nav-buttons a{
+        font-size: .8rem;
+    }
 }
 
 

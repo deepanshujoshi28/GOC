@@ -102,7 +102,7 @@ const Footer = () => {
 
         </div>
 
-        <div className='footer-cc'>Copyright <i className="fa-regular fa-copyright"></i> 2022, Garage on Call. All Rights Reserved.</div>
+        <div className='footer-cc'>Copyright <i className="fa-regular fa-copyright"></i> 2023, Garage on Call. All Rights Reserved.</div>
 
       </div>
 

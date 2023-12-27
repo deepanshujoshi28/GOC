@@ -95,9 +95,9 @@ const LandingPage = () => {
                         <div className='landing-page-price-check-heading'>General Bike Service <span>Check-list</span></div>
                         <div className='landing-page-price-check-list'>
                             <div>&#9989; Engine Oil Change (Price Extra)</div>
-                            <div>&#9989; Oil Filter Clean/Replace (if Replace Charges)</div>
-                            <div>&#9989; Air Filter Clean/Replace (if Replace Charges)</div>
-                            <div>&#9989; Spark Plug Clean/Replace (if Replace Charges)</div>
+                            <div>&#9989; Oil Filter Clean (if Replace Charges)</div>
+                            <div>&#9989; Air Filter Clean (if Replace Charges)</div>
+                            <div>&#9989; Spark Plug Clean (if Replace Charges)</div>
                             <div>&#9989; Tightening of Screws, Bolts &amp; Nuts</div>
                             <div>&#9989; Average and Performance Check-up</div>
                             <div>&#9989; Brakes – Front &amp; Rear Adjust</div>
@@ -110,7 +110,36 @@ const LandingPage = () => {
                             <div>&#9989; Basic Hand Cleaning</div>
                         </div>
                     </div>
-                    <div className='landing-page-price-button'></div>
+                    <div className='landing-page-price-button'>
+
+                        <div className='landing-page-price-button-col'>
+                            <div className='landing-page-price-button-col-heading-1'>Below 125 CC</div>
+                            <div className='landing-page-price-button-col-heading-2'>Rs. 299 /-</div>
+                            <Link to='' className='landing-page-price-button-col-button'>BOOK NOW</Link>
+                        </div>
+
+
+                        <div className='landing-page-price-button-col'>
+                            <div className='landing-page-price-button-col-heading-1'>125 CC to 199 CC</div>
+                            <div className='landing-page-price-button-col-heading-2'>Rs. 399 /-</div>
+                            <Link to='' className='landing-page-price-button-col-button'>BOOK NOW</Link>
+                        </div>
+
+
+                        <div className='landing-page-price-button-col'>
+                            <div className='landing-page-price-button-col-heading-1'>200 CC to 299 CC</div>
+                            <div className='landing-page-price-button-col-heading-2'>Rs. 499 /-</div>
+                            <Link to='' className='landing-page-price-button-col-button'>BOOK NOW</Link>
+                        </div>
+
+
+                        <div className='landing-page-price-button-col'>
+                            <div className='landing-page-price-button-col-heading-1'>Above 300 CC</div>
+                            <div className='landing-page-price-button-col-heading-2'>Rs. 599 /-</div>
+                            <Link to='' className='landing-page-price-button-col-button'>BOOK NOW</Link>
+                        </div>
+
+                    </div>
 
                 </div>
 

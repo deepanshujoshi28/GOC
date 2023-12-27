@@ -25,6 +25,7 @@ const Footer = () => {
           </div>
 
           {/* footer content */}
+
           <div className='footer-content'>
 
             {/* fc-cols */}
@@ -67,6 +68,7 @@ const Footer = () => {
                 <Link to="https://twitter.com/i/flow/login?redirect_after_login=%2FGarageoncall" target='_blank'><i className="fa-brands fa-x-twitter"></i> &ensp; Twitter</Link>
                 <Link to="https://www.instagram.com/garageoncallofficial/" target='_blank'><i className="fa-brands fa-instagram"></i> &ensp; Instagram</Link>
                 <Link to="https://www.linkedin.com/company/garage-on-call/" target='_blank'><i className="fa-brands fa-linkedin-in"></i> &ensp; Linkedin</Link>
+                <Link to="https://www.youtube.com/@GarageOnCall" target='_blank'><i className="fa-brands fa-youtube"></i> &ensp; YouTube</Link>
 
               </div>
             </div>

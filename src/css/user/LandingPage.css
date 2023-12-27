@@ -256,6 +256,73 @@
   color: white;
 }
 
+/* -------------- footer ---------- */
+
+.landing-page-footer {
+  background-color: black;
+}
+.landing-page-footer-content {
+  padding: 40px 200px 60px 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.landing-page-footer-col-1 {
+  text-align: center;
+}
+
+.landing-page-footer-col-1-logo span {
+  color: red;
+}
+
+.landing-page-footer-col-1-logo i {
+  font-size: 1.8rem;
+}
+.landing-page-footer-col-1-logo a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.landing-page-footer-col-1-tagline{
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+  word-spacing: 2px;
+}
+
+.landing-page-footer-col-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing-page-footer-col-2-list-heading{
+  font-size: 1.5rem;
+  font-family: 'nunito';
+  color: red;
+  font-weight: 800;
+}
+
+.landing-page-footer-col-2-list-points {
+  display: grid;
+  height: 100%;
+}
+
+.landing-page-footer-col-2-list-points span{
+  color: red;
+}
+.landing-page-footer-col-2-list-points a{
+  color: rgb(170, 170, 170);
+  text-decoration: none;
+}
+
+.landing-page-footer-col-2-list-points a:hover{
+  color: white;
+}
+
+
 @media only screen and (max-width: 800px) {
   .landing-page-header-top {
     padding: 5px 5px;
@@ -387,6 +454,57 @@
   .landing-page-price-button {
     margin: 0 30px;
   }
+
+
+  /* -------------- footer ---------- */
+
+  .landing-page-footer-content{
+    grid-template-columns: 1fr;
+    padding: 30px 10px;
+    gap: 50px;
+  }
+
+  .landing-page-footer-col-2-list-heading{
+    font-size: 1.3rem;
+  }
+
+  .landing-page-footer-col-2{
+    gap: 20px 0;
+    flex-wrap: wrap;
+    gap: 30px 10px;
+    justify-content: space-around;
+  }
+  .landing-page-footer-col-2-list-points{
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 0px; */
+    font-size: 1rem;
+  }
+
+  .landing-page-footer-col-2-list-points-contact{
+    height: 130px ;
+  }
+
+.landing-page-footer-col-1-logo a {
+  font-size: 1.6rem;
+}
+  
+
+.landing-page-footer-col-1-logo i {
+  font-size: 1.5rem;
+}
+
+
+.landing-page-footer-col-1-tagline{
+  font-size: 1rem;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+}
+
+  
+  
 }
 
 @media only screen and (max-width: 400px) {

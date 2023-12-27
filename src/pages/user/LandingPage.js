@@ -14,10 +14,10 @@ const LandingPage = () => {
                 {/* ------------ lp-header -------------- */}
                 <div className='landing-page-header'>
                     {/* ----------- col-1 ------------ */}
-                    <div className='landing-page-header-top'>
+                    {/* <div className='landing-page-header-top'>
                         <Link to="mailto:support@garageoncall.com"><i class="fa-solid fa-envelope"></i> support@garageoncall.com</Link>
                         <Link to="tel:01204225828"><i class="fa-solid fa-square-phone"></i> +91-9658 124 124</Link>
-                    </div>
+                    </div> */}
 
                     {/* ----------- col-2 ------------ */}
                     <div className='landing-page-nav'>
@@ -112,7 +112,7 @@ const LandingPage = () => {
                         <div className='landing-page-price-button-col'>
                             <div className='landing-page-price-button-col-heading-1'>Below 125 CC</div>
                             <div className='landing-page-price-button-col-heading-2'>Rs. 299 /-</div>
-                            <a href='#landingForm'className='landing-page-price-button-col-button'>BOOK NOW</a>
+                            <a href='#landingForm' className='landing-page-price-button-col-button'>BOOK NOW</a>
                         </div>
 
                         <div className='landing-page-price-button-col'>
@@ -139,11 +139,71 @@ const LandingPage = () => {
 
             </div>
 
-            <div className='home-pg-padding'><OurService /></div>
+            <div>
+                <div className='home-pg-padding'><OurService /></div>
+                <OurWork />
+                <TestimonialComponent />
+                <ButtonComponent />
+            </div>
 
-            <OurWork />
-            <TestimonialComponent />
-            <ButtonComponent />
+
+            <div className='landing-page-footer'>
+
+                <div className='landing-page-footer-content'>
+
+                    <div className='landing-page-footer-col-1'>
+                        <div className='landing-page-footer-col-1-logo'><Link to='/'><span> <i className="fa-solid fa-screwdriver-wrench"></i> Garage</span> On Call</Link></div>
+                        <div className='landing-page-footer-col-1-tagline'>ride with happiness</div>
+                        {/* <div className='landing-page-footer-col-1-address-heading'>Corporate Office</div>
+                        <div className='landing-page-footer-col-1-address-text'>210, 2nd Floor, Ocean Plaza, Sector-18, Noida - 201301</div> */}
+                    </div>
+
+                    <div className='landing-page-footer-col-2'>
+
+                        <div className='landing-page-footer-col-2-list'>
+                            <div className='landing-page-footer-col-2-list-heading'>Available In</div>
+                            <div className='landing-page-footer-col-2-list-points'>
+                                <div><span>&#10004; </span> &ensp; Delhi</div>
+                                <div><span>&#10004; </span> &ensp; Noida</div>
+                                <div><span>&#10004; </span> &ensp; Greater Noida</div>
+                                <div><span>&#10004; </span> &ensp; Gurugram</div>
+                                <div><span>&#10004; </span> &ensp; Ghaziabad</div>
+                                <div><span>&#10004; </span> &ensp; Faridabad</div>
+                            </div>
+                        </div>
+
+
+                        <div className='landing-page-footer-col-2-list'>
+                            <div className='landing-page-footer-col-2-list-heading'>Social Media</div>
+                            <div className='landing-page-footer-col-2-list-points'>
+                                <div><span>&#10095;&#10095; &ensp; </span><Link to="https://www.facebook.com/garageoncallofficial/" target='_blank'><i className="fa-brands fa-facebook-f"></i> &ensp; FaceBook</Link></div>
+                                <div><span>&#10095;&#10095; &ensp; </span><Link to="https://twitter.com/i/flow/login?redirect_after_login=%2FGarageoncall" target='_blank'><i className="fa-brands fa-x-twitter"></i> &ensp; Twitter</Link></div>
+                                <div><span>&#10095;&#10095; &ensp; </span><Link to="https://www.instagram.com/garageoncallofficial/" target='_blank'><i className="fa-brands fa-instagram"></i> &ensp; Instagram</Link></div>
+                                <div><span>&#10095;&#10095; &ensp; </span><Link to="https://www.linkedin.com/company/garage-on-call/" target='_blank'><i className="fa-brands fa-linkedin-in"></i> &ensp; Linkedin</Link></div>
+                                <div><span>&#10095;&#10095; &ensp; </span><Link to="https://www.youtube.com/@GarageOnCall" target='_blank'><i className="fa-brands fa-youtube"></i> &ensp; YouTube</Link></div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div className='landing-page-footer-col-2-list '>
+                            <div className='landing-page-footer-col-2-list-heading'>Contact</div>
+                            <div className='landing-page-footer-col-2-list-points landing-page-footer-col-2-list-points-contact'>
+                                <div><span>&#10095;&#10095; &ensp; </span><Link target='"_blank' to="mailto:support@garageoncall.com"><i className="fa-regular fa-envelope"></i> &ensp; support@garageoncall.com </Link></div>
+                                <div><span>&#10095;&#10095; &ensp; </span><Link target='"_blank' to="tel:01204225828"><i className="fa-solid fa-phone-volume"></i> &ensp; 0120 4225828 </Link></div>
+                                <div><span>&#10095;&#10095; &ensp; </span><Link target='"_blank' to="https://wa.me/+919658124124?text=Hello ! I'm Interested in Doorstep Bike Service. Please contact me."><i className="fa-brands fa-whatsapp"></i> &ensp; +91 9658-124-124 </Link></div>
+                                <div><span>&#10095;&#10095; &ensp; </span><Link target='"_blank' to="/"><i className="fa-solid fa-globe"></i> &ensp; https://garageoncall.com </Link></div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
 
         </div>
     )

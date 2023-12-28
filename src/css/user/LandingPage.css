@@ -41,6 +41,7 @@
   display: flex;
   gap: 20px;
 }
+
 .landing-page-nav-buttons a {
   background-color: red;
   padding: 10px 20px;
@@ -145,11 +146,24 @@
 .landing-page-header-content-col-2-form form input {
   background-color: transparent;
   border: solid rgb(205, 205, 205) 2px;
-  padding: 10px 20px;
+  padding: 7px 20px;
   color: white;
   border-radius: 10px;
+  font-size: 1rem;
 }
 
+.landing-page-header-content-col-2-form form select{
+  background-color: transparent;
+  border: solid rgb(205, 205, 205) 2px;
+  padding: 7px 20px;
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.landing-page-header-content-col-2-form form option{
+  color: black;
+}  
 .landing-page-header-content-col-2-form form button {
   color: white;
   background-color: red;

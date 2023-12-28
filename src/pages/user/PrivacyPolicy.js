@@ -80,7 +80,7 @@ const PrivacyPolicy = () => {
 
 
         <div className='TC-heading-2'>Contact Us:</div>
-        <div className='TC-text'>For any questions or concerns regarding our Privacy Policy, please contact us at support@garageoncall.com .</div>
+        <div className='TC-text'>For any questions or concerns regarding our Privacy Policy, please contact us at query@garageoncall.com .</div>
 
 
 

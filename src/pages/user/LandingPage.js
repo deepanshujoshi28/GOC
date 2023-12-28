@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
 // ------------------------ images ---------------------------
 import bikeparts from '../../images/bike-parts.png'
@@ -16,8 +16,118 @@ import OurService from '../../components/user/OurService'
 import OurWork from '../../components/user/OurWork'
 import TestimonialComponent from '../../components/user/TestimonialComponent'
 import ButtonComponent from '../../components/user/ButtonComponent'
+import axios from 'axios'
+import { useCountUp } from 'react-countup'
 
 const LandingPage = () => {
+
+    useCountUp({ ref: 'landing60000', end: 60000, duration: 3 });
+    useCountUp({ ref: 'landing4', end: 4, duration: 4 });
+    useCountUp({ ref: 'landing7', end: 7, duration: 2, delay: 2 });
+    useCountUp({ ref: 'landing8', end: 8, duration: 5, delay: 1 });
+
+
+
+    
+    
+    
+
+
+    // -------------- save data to backend ----------
+
+    const [data, setData] = useState({
+        number: '',
+        model: '',
+        city: '',
+    }) 
+
+    const handleNumber = (e) => {
+        const limit = 10;
+        const value = e.target.value.slice(0, limit);
+        setData({
+            ...data,
+            [e.target.name]: value
+        });
+    };
+
+    const handleCity = (e) => {
+        const value = e.target.value;
+        setData({
+            ...data,
+            [e.target.name]: value
+        });
+    };
+
+    const navigate = useNavigate()
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const userData = {
+            number: data.number,
+            model: modelName,
+            city: data.city
+        };
+        axios
+            .post("http://localhost:2000/landing", userData)
+            .then((response) => {
+                console.log(response);
+                navigate("/booking-confirm")
+            })
+            .catch((error) => {
+                if (error.response) {
+                    console.log(error.response);
+                    console.log("server responded");
+                } else if (error.request) {
+                    console.log("network error");
+                } else {
+                    console.log(error);
+                }
+            });
+    }
+
+
+
+    // ------------------ fetch bike api -------
+
+
+    const [modelName, setModelName] = useState()
+
+    const [id, setId] = useState("6575cf9ae07dced455d8abf5")
+    const [brand, setBrand] = useState([])
+    const [model, setModel] = useState([])
+
+
+    // fetch brand (1st object/array) --------------
+    const fetchBrand = async () => {
+        const res = await axios.get(`http://localhost:2000/bikeApi`)
+        console.log('data', res.data.bikeApi)
+        setBrand(res.data.bikeApi)
+    }
+
+    useEffect(() => {
+        fetchBrand();
+    }, [])
+
+
+    // fetch model (2nd/internal object/array) ---------------
+    const fetchmodel = async () => {
+        const resp = await axios.get(`http://localhost:2000/bikeApi/${id}`)
+        setModel(resp.data.bikeApi.model)
+    }
+
+    const clickHandle = ((e) => {
+        fetchmodel()
+    })
+
+
+    // on selecting model save its value
+    const modelChange = ((e) => {
+        setModelName(e.target.value)
+        console.log(e.target.value)
+    })
+
+
+
     return (
         <div>
             <div className='landing-page'>
@@ -58,17 +168,17 @@ const LandingPage = () => {
                             <div className='landing-page-header-content-col-1-numbers'>
 
                                 <div className='landing-page-header-content-col-1-numbers-col-1'>
-                                    <div className='landing-page-header-content-col-1-numbers-n'>4.7/5</div>
-                                    <div className='landing-page-header-content-col-1-numbers-txt'>Based on 1000+<br />reviews</div>
+                                    <div className='landing-page-header-content-col-1-numbers-n'><span id='landing4'></span>.<span id='landing7'></span>/5</div>
+                                    <div className='landing-page-header-content-col-1-numbers-txt'>Based on 10,000+<br />reviews</div>
                                 </div>
 
                                 <div className='landing-page-header-content-col-1-numbers-col-2'>
-                                    <div className='landing-page-header-content-col-1-numbers-n'>60,000+</div>
+                                    <div className='landing-page-header-content-col-1-numbers-n'><span id='landing60000'></span>+</div>
                                     <div className='landing-page-header-content-col-1-numbers-txt'>Happy<br />Customers</div>
                                 </div>
 
                                 <div className='landing-page-header-content-col-1-numbers-col-3'>
-                                    <div className='landing-page-header-content-col-1-numbers-n'>8+</div>
+                                    <div className='landing-page-header-content-col-1-numbers-n'><span id='landing8'></span>+</div>
                                     <div className='landing-page-header-content-col-1-numbers-txt'>Years Of <br />experience</div>
                                 </div>
 
@@ -81,10 +191,45 @@ const LandingPage = () => {
                             <div className='landing-page-header-content-col-2-img'><img src={mechanic} /></div>
                             <div className='landing-page-header-content-col-2-form'>
                                 <div className='landing-page-header-content-col-2-form-heading'><img src={mechanic} /><span>Best <span>Bike Service</span> <br />At Your Home</span></div>
-                                <form>
-                                    <input required type='number' placeholder='Enter Your Number' />
-                                    <input placeholder='Enter Your City' />
-                                    <button>BOOK NOW</button>
+                                <form onSubmit={handleSubmit}>
+
+
+                                    <select onClick={clickHandle}
+                                        onChange={(e) => {
+                                            console.log(e.target.value)
+                                            setId(e.target.value)
+                                        }}
+                                        className="select-bike-inp ">
+                                        <option disabled selected>Select Brand</option>
+                                        {brand.map((e) => {
+                                            return <option name='brand' value={e._id}>{e.brand}</option>
+                                        })}
+
+                                    </select>
+                                    <select className="select-bike-inp" onChange={modelChange} name='model' >
+                                        <option disabled selected>--- Select Model ---</option>
+
+                                        {
+                                            model.map((e) => {
+                                                return <option value={e}>{e}</option>
+                                            })
+                                        }
+
+                                    </select>
+
+                                    <input required type='number' name='number' value={data.number} onChange={handleNumber} placeholder='Enter Your Number' />
+                                    {/* <input placeholder='select brand' name='city' value={data.city} onChange={handleCity} />
+                                    <input placeholder='select model' name='city' value={data.city} onChange={handleCity} /> */}
+                                    <select onChange={handleCity} name='city'>
+                                        <option disabled selected>---- select your city ----</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Noida">Noida</option>
+                                        <option value="Greater Noida">Greater Noida</option>
+                                        <option value="Gurugram">Gurugram</option>
+                                        <option value="Ghaziabad">Ghaziabad</option>
+                                        <option value="Faridabad">Faridabad</option>
+                                    </select>
+                                    <button> <div className='pop-outin'>BOOK NOW</div></button>
                                 </form>
                             </div>
 
@@ -106,38 +251,38 @@ const LandingPage = () => {
                         {/* ---------- location 1---------- */}
                         <div className='landing-page-location-locations-col landing-page-location-locations-col-1 '>
                             <div className='landing-page-location-locations-col-icon'><img src={del} alt='location icon' /></div>
-                            <div className='landing-page-location-locations-col-text'>Bike Service <br/>in <span>Delhi</span></div>
+                            <div className='landing-page-location-locations-col-text'>Bike Service <br />in <span>Delhi</span></div>
                         </div>
-                        
+
 
                         {/* ---------- location 2---------- */}
                         <div className='landing-page-location-locations-col'>
                             <div className='landing-page-location-locations-col-icon'><img src={noi} alt='location icon' /></div>
-                            <div className='landing-page-location-locations-col-text'>Bike Service <br/>in <span>Noida</span></div>
+                            <div className='landing-page-location-locations-col-text'>Bike Service <br />in <span>Noida</span></div>
                         </div>
 
                         {/* ---------- location 3---------- */}
                         <div className='landing-page-location-locations-col'>
                             <div className='landing-page-location-locations-col-icon'><img src={noi} alt='location icon' /></div>
-                            <div className='landing-page-location-locations-col-text'>Bike Service in<br/><span>Greater Noida</span></div>
+                            <div className='landing-page-location-locations-col-text'>Bike Service in<br /><span>Greater Noida</span></div>
                         </div>
 
                         {/* ---------- location 4---------- */}
                         <div className='landing-page-location-locations-col'>
                             <div className='landing-page-location-locations-col-icon'><img src={gur} alt='location icon' /></div>
-                            <div className='landing-page-location-locations-col-text'>Bike Service <br/>in <span>Gurugram</span></div>
+                            <div className='landing-page-location-locations-col-text'>Bike Service <br />in <span>Gurugram</span></div>
                         </div>
 
                         {/* ---------- location 5---------- */}
                         <div className='landing-page-location-locations-col'>
                             <div className='landing-page-location-locations-col-icon'><img src={far} alt='location icon' /></div>
-                            <div className='landing-page-location-locations-col-text'>Bike Service <br/>in <span>Faridabad</span></div>
+                            <div className='landing-page-location-locations-col-text'>Bike Service <br />in <span>Faridabad</span></div>
                         </div>
 
                         {/* ---------- location 6---------- */}
                         <div className='landing-page-location-locations-col'>
                             <div className='landing-page-location-locations-col-icon'><img src={ghaz} alt='location icon' /></div>
-                            <div className='landing-page-location-locations-col-text'>Bike Service <br/>in <span>Ghaziabad</span></div>
+                            <div className='landing-page-location-locations-col-text'>Bike Service <br />in <span>Ghaziabad</span></div>
                         </div>
 
                     </div>
@@ -245,7 +390,7 @@ const LandingPage = () => {
                         <div className='landing-page-footer-col-2-list '>
                             <div className='landing-page-footer-col-2-list-heading'>Contact</div>
                             <div className='landing-page-footer-col-2-list-points landing-page-footer-col-2-list-points-contact'>
-                                <div><span>&#10095;&#10095; &ensp; </span><Link target='"_blank' to="mailto:support@garageoncall.com"><i className="fa-regular fa-envelope"></i> &ensp; support@garageoncall.com </Link></div>
+                                <div><span>&#10095;&#10095; &ensp; </span><Link target='"_blank' to="mailto:query@garageoncall.com"><i className="fa-regular fa-envelope"></i> &ensp; query@garageoncall.com </Link></div>
                                 <div><span>&#10095;&#10095; &ensp; </span><Link target='"_blank' to="tel:01204225828"><i className="fa-solid fa-phone-volume"></i> &ensp; 0120 4225828 </Link></div>
                                 <div><span>&#10095;&#10095; &ensp; </span><Link target='"_blank' to="https://wa.me/+919658124124?text=Hello ! I'm Interested in Doorstep Bike Service. Please contact me."><i className="fa-brands fa-whatsapp"></i> &ensp; +91 9658-124-124 </Link></div>
                                 <div><span>&#10095;&#10095; &ensp; </span><Link target='"_blank' to="/"><i className="fa-solid fa-globe"></i> &ensp; https://garageoncall.com </Link></div>

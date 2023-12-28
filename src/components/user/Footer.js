@@ -50,7 +50,7 @@ const Footer = () => {
               <div className='fc-c-h'>Contact</div>
               <div className='fc-c-c'>
 
-                <div><i className="fa-regular fa-envelope"></i> &ensp; support@garageoncall.com</div>
+                <div><i className="fa-regular fa-envelope"></i> &ensp; query@garageoncall.com</div>
                 <div><i className="fa-solid fa-phone-volume"></i> &ensp; 0120 4225828</div>
                 <div><i className="fa-brands fa-whatsapp"></i> &ensp; +91 9658-124-124</div>
                 <div><i className="fa-solid fa-globe"></i> &ensp; https://garageoncall.com</div>

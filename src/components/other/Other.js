@@ -1,29 +1,24 @@
 import React, { useState } from 'react'
 
 const Other = () => {
-
-  
-  const [num, setNum] = useState('');
-
-  const limit = 10;
-  const handleNumChange = event => {
-      setNum(event.target.value.slice(0, limit));
-  };
-  
-  
+  const [value, setValue] = useState('114');
+      const handleChange = (event) => { setValue(event.target.value) };
+      const error = (value < 10 ) ? 'Value must be between 10 and 20.' : '';
+    
   return (
     <div>
-    <div>
-      <input 
-      type="number"
-      value={num}
-      onChange={handleNumChange}
-      placeholder="Number input"
-      />
-    </div>
-    <div></div>
-    <div>Other</div>
-
+      <div className="container">
+          <h3>React Js Input Field Min Max Validation</h3>
+          <label>
+            Enter a Number:
+            <input
+              type="text"
+              value={value}
+              onChange={handleChange}
+            />
+          </label>
+          {error && <p style={{ color: 'red' }}>{error}</p>}
+        </div>
     </div>
   )
 }

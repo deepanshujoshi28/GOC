@@ -1,7 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import img1 from '../../images/bike-parts.png'
-import img2 from '../../images/mechanic.png'
+
+// ------------------------ images ---------------------------
+import bikeparts from '../../images/bike-parts.png'
+import mechanic from '../../images/mechanic.png'
+import del from "../../images/delhi.jpg"
+import noi from "../../images/noida.jpg"
+import gur from "../../images/gurgaon.jpg"
+import far from "../../images/Faridabad.jpg"
+import ghaz from "../../images/Ghaziabad.jpg"
+
+
+// ------------------------ components ---------------------------
 import OurService from '../../components/user/OurService'
 import OurWork from '../../components/user/OurWork'
 import TestimonialComponent from '../../components/user/TestimonialComponent'
@@ -36,7 +46,7 @@ const LandingPage = () => {
 
                         {/* ---------- lp-c-col-1 ---------- */}
                         <div className='landing-page-header-content-col-1'>
-                            <div className='landing-page-header-content-col-1-img'><img src={img1} /></div>
+                            <div className='landing-page-header-content-col-1-img'><img src={bikeparts} /></div>
                             <div className='landing-page-header-content-col-1-heading'>People trust Garrage On Call</div>
                             <div className='landing-page-header-content-col-1-stars'>
                                 <i class="fa-solid fa-star"></i>
@@ -68,9 +78,9 @@ const LandingPage = () => {
 
                         {/* ---------- lp-c-col-2 ---------- */}
                         <div id='landingForm' className='landing-page-header-content-col-2'>
-                            <div className='landing-page-header-content-col-2-img'><img src={img2} /></div>
+                            <div className='landing-page-header-content-col-2-img'><img src={mechanic} /></div>
                             <div className='landing-page-header-content-col-2-form'>
-                                <div className='landing-page-header-content-col-2-form-heading'><img src={img2} /><span>Best <span>Bike Service</span> <br />At Your Home</span></div>
+                                <div className='landing-page-header-content-col-2-form-heading'><img src={mechanic} /><span>Best <span>Bike Service</span> <br />At Your Home</span></div>
                                 <form>
                                     <input required type='number' placeholder='Enter Your Number' />
                                     <input placeholder='Enter Your City' />
@@ -84,6 +94,53 @@ const LandingPage = () => {
 
                     {/* ----------- col-4 ------------ */}
                     <div className='landing-page-header-bottom'>Mechanic on Call : <Link to="tel:01204225828"> +91-9658 124 124</Link></div>
+
+                </div>
+
+                {/* ---------------- lp-locations ---------------- */}
+                <div className='landing-page-location'>
+                    <div className='landing-page-location-heading'>We Provide Best <span>Bike Service</span> at <span>Home</span> by <span>Experts</span></div>
+
+                    <div className='landing-page-location-locations'>
+
+                        {/* ---------- location 1---------- */}
+                        <div className='landing-page-location-locations-col landing-page-location-locations-col-1 '>
+                            <div className='landing-page-location-locations-col-icon'><img src={del} alt='location icon' /></div>
+                            <div className='landing-page-location-locations-col-text'>Bike Service <br/>in <span>Delhi</span></div>
+                        </div>
+                        
+
+                        {/* ---------- location 2---------- */}
+                        <div className='landing-page-location-locations-col'>
+                            <div className='landing-page-location-locations-col-icon'><img src={noi} alt='location icon' /></div>
+                            <div className='landing-page-location-locations-col-text'>Bike Service <br/>in <span>Noida</span></div>
+                        </div>
+
+                        {/* ---------- location 3---------- */}
+                        <div className='landing-page-location-locations-col'>
+                            <div className='landing-page-location-locations-col-icon'><img src={noi} alt='location icon' /></div>
+                            <div className='landing-page-location-locations-col-text'>Bike Service in<br/><span>Greater Noida</span></div>
+                        </div>
+
+                        {/* ---------- location 4---------- */}
+                        <div className='landing-page-location-locations-col'>
+                            <div className='landing-page-location-locations-col-icon'><img src={gur} alt='location icon' /></div>
+                            <div className='landing-page-location-locations-col-text'>Bike Service <br/>in <span>Gurugram</span></div>
+                        </div>
+
+                        {/* ---------- location 5---------- */}
+                        <div className='landing-page-location-locations-col'>
+                            <div className='landing-page-location-locations-col-icon'><img src={far} alt='location icon' /></div>
+                            <div className='landing-page-location-locations-col-text'>Bike Service <br/>in <span>Faridabad</span></div>
+                        </div>
+
+                        {/* ---------- location 6---------- */}
+                        <div className='landing-page-location-locations-col'>
+                            <div className='landing-page-location-locations-col-icon'><img src={ghaz} alt='location icon' /></div>
+                            <div className='landing-page-location-locations-col-text'>Bike Service <br/>in <span>Ghaziabad</span></div>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -183,8 +240,8 @@ const LandingPage = () => {
                                 <div><span>&#10095;&#10095; &ensp; </span><Link to="https://www.youtube.com/@GarageOnCall" target='_blank'><i className="fa-brands fa-youtube"></i> &ensp; YouTube</Link></div>
                             </div>
                         </div>
-                        
-                        
+
+
                         <div className='landing-page-footer-col-2-list '>
                             <div className='landing-page-footer-col-2-list-heading'>Contact</div>
                             <div className='landing-page-footer-col-2-list-points landing-page-footer-col-2-list-points-contact'>

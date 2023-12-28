@@ -322,6 +322,51 @@
   color: white;
 }
 
+/* ---------- location ---------- */
+
+.landing-page-location{
+  margin: 40px 0;
+}
+
+.landing-page-location-heading{
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: stylish;
+}
+.landing-page-location-heading span{
+  color: red;
+}
+
+.landing-page-location-locations{
+  display: flex;
+  text-align: center;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.landing-page-location-locations-col{
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  box-shadow: rgba(255, 255, 255, 0.2) 2px 4px 10px;
+border-radius: 20px;
+}
+
+.landing-page-location-locations-col-icon img{
+  border-radius: 50%;
+  width: 100px;
+}
+
+.landing-page-location-locations-col-text{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.landing-page-location-locations-col-text span{
+  color: red;
+  font-weight: 600;
+}
 
 @media only screen and (max-width: 800px) {
   .landing-page-header-top {
@@ -330,7 +375,7 @@
   }
 
   .landing-page-nav {
-    padding: 10px 8px;
+    padding: 10px 15px;
   }
 
   .landing-page-nav-logo i {
@@ -348,7 +393,7 @@
     padding: 3px 7px;
     border-radius: 10px;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .landing-page-header-content {
@@ -441,6 +486,8 @@
     overflow-y: hidden;
     gap: 20px;
     justify-content: space-between;
+    padding-bottom: 10px;
+    /* background-color: gray; */
   }
 
   .landing-page-price-button-col-heading-1 {
@@ -503,7 +550,38 @@
   word-spacing: 1px;
 }
 
-  
+
+/* ---------- location ---------- */
+
+.landing-page-location{
+  margin: 20px 0;
+}
+.landing-page-location-heading{
+  font-size: 1.8rem;
+  margin: 0 20px;
+}
+.landing-page-location-locations{
+  overflow: auto;
+  gap: 20px;
+  justify-content: start;
+  padding-bottom: 10px;
+}
+
+.landing-page-location-locations-col{
+  padding: 10px;
+}
+
+.landing-page-location-locations-col-1{
+  margin-left: 20px;
+}
+.landing-page-location-locations-col-icon img{
+  width: 80px;
+}
+
+.landing-page-location-locations-col-text{
+  font-size: .9rem;
+  width: 115px;
+}
   
 }
 
@@ -519,6 +597,6 @@
     gap: 5px;
   }
   .landing-page-nav-buttons a {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }

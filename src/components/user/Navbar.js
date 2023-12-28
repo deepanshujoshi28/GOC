@@ -152,8 +152,9 @@ const Navbar = () => {
 
                     <div className="select-btn">
                         <div><span onClick={Delhi}><img src={del} /> <div> Delhi </div> </span> </div>
-                        <div> <span onClick={Noida}><img src={noi} /> <div> Noida </div> </span> </div>
                         <div> <span onClick={Gurugram}><img src={gur} /> <div> Gurugram </div> </span> </div>
+                        <div> <span onClick={Noida}><img src={noi} /> <div> Noida </div> </span> </div>
+                        <div> <span onClick={Noida}><img src={noi} /> <div>Greater Noida </div> </span> </div>
                         <div> <span onClick={Ghaziabad}><img src={ghaz} /> <div> Ghaziabad </div> </span> </div>
                         <div> <span onClick={Faridabad}><img src={far} /> <div> Faridabad </div> </span> </div>
                     </div>

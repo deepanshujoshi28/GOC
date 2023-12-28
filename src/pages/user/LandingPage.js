@@ -238,7 +238,7 @@ const LandingPage = () => {
                     </div>
 
                     {/* ----------- col-4 ------------ */}
-                    <div className='landing-page-header-bottom'>Mechanic on Call : <Link to="tel:01204225828"> +91-9658 124 124</Link></div>
+                    <div className='landing-page-header-bottom'>Mechanic on Call : <Link to="tel:9658124124"> +91-9658 124 124</Link></div>
 
                 </div>
 

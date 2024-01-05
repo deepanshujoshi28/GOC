@@ -157,7 +157,7 @@ const LandingPage = () => {
                         {/* ---------- lp-c-col-1 ---------- */}
                         <div className='landing-page-header-content-col-1'>
                             <div className='landing-page-header-content-col-1-img'><img src={bikeparts} /></div>
-                            <div className='landing-page-header-content-col-1-heading'>People trust Garrage On Call</div>
+                            <div className='landing-page-header-content-col-1-heading'>People trust Garage On Call</div>
                             <div className='landing-page-header-content-col-1-stars'>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>

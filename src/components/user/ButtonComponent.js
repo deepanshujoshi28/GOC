@@ -120,7 +120,7 @@ const ButtonComponent = () => {
         :
         <div className='help-fix-frm'>
         
-            <form className='help-fix-form'  onSubmit={handleSubmit}>
+            <form className='help-fix-form' onSubmit={handleSubmit}>
               <input placeholder='your number' type='number' required name='number' value={data.number} onChange={handleChange}  />
               <input placeholder='subject'  name='subject' value={data.subject} onChange={handleChange}/>
               <textarea rows={5} placeholder='your message' required name='message' value={data.message} onChange={handleChange}/>

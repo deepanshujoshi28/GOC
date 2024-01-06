@@ -197,7 +197,7 @@
 .bike-u-api-list-1,
 .bike-u-api-list-2{
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap: 40px;
   /* border: solid; */
   width: 70%;

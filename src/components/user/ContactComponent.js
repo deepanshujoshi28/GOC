@@ -81,7 +81,8 @@ const ContactComponent = () => {
           {/* col-1 */}
           <div className='contact-col-1'>
             <div className='cont-map'>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.014336785242!2d77.3256289!3d28.569332199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce44943d78a13%3A0x29ae137fea9ed1!2sBhumu%20India%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1700459857718!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224219.58116418152!2d77.12350783724641!3d28.58684560461558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce55b3ce9ced9%3A0x8a0b9a6788107f2f!2sGarage%20on%20Call!5e0!3m2!1sen!2sin!4v1704543735517!5m2!1sen!2sin" allowfullscreen="" title='goc' loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224219.58116418152!2d77.12350783724641!3d28.58684560461558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce55b3ce9ced9%3A0x8a0b9a6788107f2f!2sGarage%20on%20Call!5e0!3m2!1sen!2sin!4v1704543735517!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
             </div>
           </div>
 
